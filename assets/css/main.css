@@ -84,6 +84,10 @@ img, .bg {
   color: white;
   display: inline-block;
 }
+.btn:hover {
+  color: #5ec4ff;
+  border-color: #ea525f;
+}
 @media screen and (min-width: 768px){
   .br-mob { display: none; }
 }
