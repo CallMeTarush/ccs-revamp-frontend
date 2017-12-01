@@ -1,0 +1,138 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+.row-1-text {
+    font-family: 'PT Sans', sans-serif;
+}
+.row-2 h1 {
+  font-family: 'Open Sans';font-size: 45px;
+}
+.row-3 h1 {
+  font-family: 'Open Sans';font-size: 45px;
+
+}
+.wrap {
+  height: 100%;  
+  position: relative;
+  overflow: hidden;
+}
+img, .bg {
+    
+    
+  }
+  
+  .bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background-color: black;
+    background: url('https://imgur.com/FMiKw3l.png') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+
+.btn {
+  background: transparent;
+  border-style: solid;
+  border-color: #5ec4ff;
+  border-width: 3px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 45px;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #ea525f;
+  border-radius: 0;
+}
+.row-2 i {
+  color: #ea525f;
+}
+.row-2 u {
+  color: #ea525f;
+}
+.csi-img img {
+  width: 100% !important;
+  height: auto;
+  text-align: right;
+}
+.row-1 {
+  color: white;
+  margin: 10vh 0;
+}
+.row-1 h1 {
+  font-size: 45px;
+}
+.row-2 {
+  color: white;
+  margin: 10vh 0;
+}
+.row-3 h1{
+  color: white;
+  display: inline-block;
+}
+@media screen and (min-width: 768px){
+  .br-mob { display: none; }
+}
+
+.mob-row-3 {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    background-color: black;
+    background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
+    background-size: cover;
+
+    transform: scale(1.1);
+  }
+  .row-1 h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .row-2 h1 {
+     font-size: 30px;
+    text-align: center; 
+  }
+  .csi-img img {
+    width: 80% !important;
+    height: auto;
+  }
+  .row-1 {
+    text-align: center;
+  }
+  .row-3 h1 {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+    border-width: 1px;
+  }
+  .mob-row-3 {
+    display: block;
+    margin-top: 10px !important;
+  }
+
+}
