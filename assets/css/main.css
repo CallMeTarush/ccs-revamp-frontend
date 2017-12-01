@@ -91,6 +91,22 @@ img, .bg {
 .mob-row-3 {
   display: inline-block;
 }
+.br-pradyun {
+  display: none;
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+  .br-pradyun {
+    display: block;
+  }
+  .csi-img img {
+    width: 50% !important;
+    height: auto;
+
+  }
+  .row-1 {
+    text-align: center;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .bg {
