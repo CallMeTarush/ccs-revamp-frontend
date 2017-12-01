@@ -1,3 +1,5 @@
+
+
  var lFollowX = 0,
     lFollowY = 0,
     x = 0,
@@ -29,3 +31,5 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
+
+$('header').parallaxify();
