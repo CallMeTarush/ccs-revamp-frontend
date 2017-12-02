@@ -78,13 +78,11 @@ $(document).ready(function () {
             phone: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your phone number'
+                        message: 'Please supply a phone number'
                     },
-                    stringLength: {
-                        min: 10,
-                        max: 10,
+                    regexp: {
+                        regexp: /^[7-9][0-9]{9}$/,
                         message: 'Please enter a valid phone number'
-
                     }
                 }
             },
@@ -92,7 +90,7 @@ $(document).ready(function () {
                 validators: {
                      stringLength: {
                         min: 8,
-                        message: 'Atleast 8 characters'
+                        message: 'Password must be at least 8 characters long'
                     },
                     notEmpty: {
                         message: 'Please supply your password'
@@ -103,11 +101,11 @@ $(document).ready(function () {
                 validators: {
                     identical: {
                         field: 'password',
-                        message: 'The password and its confirm are not the same'
+                        message: 'The passwords do not match.'
                         }
                     },
                     notEmpty: {
-                        message: 'Confirm password!'
+                        message: 'This field can not be empty.'
                     }
                 }
             }
