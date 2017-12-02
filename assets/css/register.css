@@ -48,9 +48,12 @@ body {
 }
 .logo-container {
 }
-.wrap {
+.container {
     height: 100%;
     position: relative;
+    overflow-x: hidden !important;
+}
+.bg {
     overflow: hidden;
 }
 img,
@@ -64,7 +67,7 @@ img,
     background-color: black;
     background: url('https://imgur.com/FMiKw3l.png') no-repeat center center;
     background-size: cover;
-
+    transform: scale(1.1);
 }
 @media only screen and (min-width: 2439px) {
     .container {
@@ -80,9 +83,9 @@ img,
         left: 0;
         z-index: -1;
         background-color: black;
-        background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
+        background: url('https://imgur.com/V9WyzeD.png') repeat center center;
         background-size: cover;
-
+        transform: scale(1.1);
     }
 
     .csi-img img{
