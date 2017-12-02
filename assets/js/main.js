@@ -1,6 +1,3 @@
-document.getElementById("btn-join").onclick = function () {
-  location.href = "www.yoursite.com";
-};
 
  var lFollowX = 0,
     lFollowY = 0,
@@ -34,4 +31,3 @@ $(window).on('mousemove click', function(e) {
 
 moveBackground();
 
-$('header').parallaxify();
