@@ -1,0 +1,92 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    position: relative;
+}
+
+.panel {    
+    background-color: transparent;
+
+    
+}
+.row-1-text {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    .br-mob {
+        display: none;
+    }
+}
+.row-logo {
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+
+.csi-img {
+    width: 80% !important;
+    height: auto;
+}
+.logo-container {
+}
+.wrap {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+img,
+.bg {} .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    background: url('https://imgur.com/FMiKw3l.png') no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 768px) {
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: black;
+        background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
+        background-size: cover;
+        transform: scale(1.1);
+    }
+
+    .csi-img img{
+        width: 80% !important;
+        height: auto;
+    }
+
+    .row-1-text h1{
+        font-size: 23px;
+    }
+    .csi-img {
+        width: 60% !important;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .br-pradyun {
+        display: block;
+    }
+    .csi-img {
+        width: 50% !important;
+        height: auto;
+    }
+}

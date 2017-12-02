@@ -12,6 +12,7 @@ body {
 }
 .row-1-text {
     font-family: 'PT Sans', sans-serif;
+    color: white;
 }
 .row-2 h1 {
     font-family: 'Open Sans';
@@ -68,21 +69,20 @@ img,
 .row-2 u {
     color: #ea525f;
 }
-.csi-img img {
-    width: 100% !important;
+.csi-img {
+    width: 80% !important;
     height: auto;
-    text-align: right;
 }
 .row-1 {
     color: white;
-    margin: 10vh 0;
+    margin-bottom: 10vh;
 }
 .row-1 h1 {
     font-size: 45px;
 }
 .row-2 {
     color: white;
-    margin: 10vh 0;
+    margin: 20vh 0;
 }
 .row-3 h1 {
     color: white;
@@ -150,11 +150,15 @@ img,
 .br-pradyun {
     display: none;
 }
+.row-logo {
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
 @media only screen and (max-width: 1000px) and (min-width: 768px) {
     .br-pradyun {
         display: block;
     }
-    .csi-img img {
+    .csi-img {
         width: 50% !important;
         height: auto;
     }
@@ -183,10 +187,7 @@ img,
         font-size: 30px;
         text-align: center;
     }
-    .csi-img img {
-        width: 80% !important;
-        height: auto;
-    }
+    
     .row-1 {
         text-align: center;
     }
@@ -200,5 +201,21 @@ img,
     .mob-row-3 {
         display: block;
         margin-top: 10px !important;
+    }
+    .row-1-text h1{
+        font-size: 23px;
+    }
+    .row-1 {
+        color: white;
+        margin-bottom: 5vh;
+    }
+    .row-2 {
+        color: white;
+        margin: 14vh 0;
+    }
+
+    .csi-img {
+        width: 60% !important;
+        height: auto;
     }
 }

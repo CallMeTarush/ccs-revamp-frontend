@@ -1,4 +1,6 @@
-
+document.getElementById("btn-join").onclick = function () {
+  location.href = "www.yoursite.com";
+};
 
  var lFollowX = 0,
     lFollowY = 0,
