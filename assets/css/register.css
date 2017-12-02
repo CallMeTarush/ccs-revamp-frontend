@@ -112,7 +112,9 @@ img,
 }
 
 #success_message{ display: none;}
-
+#message {
+    color: white;
+}
 .form-group {
     color: white;
     margin-bottom: 20px;
