@@ -69,6 +69,9 @@ $(document).ready(function () {
                     regexp: {
                         regexp: /^(1)(7)(.)(.)(.)(\d)(\d)(\d)(\d)$/,
                         message: 'Please enter a valid registration number'
+                    },
+                    notEmpty: {
+                        message: 'Please enter registration number'
                     }
                 }
             },

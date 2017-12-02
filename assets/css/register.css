@@ -76,11 +76,11 @@ img,
         background-color: black;
         background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
         background-size: cover;
-        transform: scale(1.1);
+
     }
 
     .csi-img img{
-        width: 80% !important;
+        width: 100% !important;
         height: auto;
     }
 
@@ -180,11 +180,6 @@ body {
     padding-bottom: 10px;    
 }
 
-.iconmelon {
-    display: block;
-    margin: auto;
-}
-
 #form > div {
     margin-bottom: 25px;
 }
@@ -192,6 +187,10 @@ body {
 #form > div:last-child {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.input-group {
+    width: 100%;
 }
 
 input[type="text"], textarea {
@@ -216,7 +215,14 @@ input:focus:invalid {
   border-style: solid;
 }
 .help-block {
-    margin-top: 10px !important;
+    margin-top: 30px !important;
+}
+#info-text {
+    font-weight: lighter;
+    color: #ea525f !important;
+}
+.email-pad {
+    padding-bottom: 10px;
 }
 #success_message{ display: none;}
 .form-horizontal .control-label {
@@ -245,4 +251,9 @@ fieldset legend {
     border-bottom: 1px solid #ea525f;
     text-decoration: none;
 
+}
+
+.has-success .form-control {
+    border-color: white !important;
+    border-width: 2px;
 }
