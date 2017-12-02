@@ -109,9 +109,9 @@ img,
     border-radius: 0;
 }
 .btn:hover {
-    border-color: #ea525f;
-    color: #5ec4ff;
-    background: transparent;
+    border-color: #ea525f !important;
+    color: #5ec4ff !important;
+    background: transparent !important;
 }
 #loginbox {
     margin-top: 30px;
