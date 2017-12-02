@@ -75,7 +75,7 @@ img,
         z-index: -1;
         background-color: black;
         background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
-        background-size: cover;
+        background-size: fill;
 
     }
 
