@@ -1,26 +1,31 @@
+
+
 <!DOCTYPE html>
 <html>
+   <head>
+      <title> Computer Society of india - CCS </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  
 
-<head>
-  <title> Computer Society of india - CCS </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-     
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
-  <link rel="stylesheet" href="assets/css/login.css">
-  <script src="assets/js/login.js"></script>
-</head>
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+      <link rel="stylesheet" href="assets/css/login.css">
+      <script src="assets/js/login.js"></script>
+   </head>
+   <body>
 
-<body>
-  <div class="wrap">
+      <div class="container col-md-12 col-xs-12">
+
           <div class="bg"></div> 
+          <div class="upar-walla">
           <!-- <div id="bg-parallel" data-parallaxify-background-range="100"></div> -->
             <div class="col-md-12 text-center row-logo">
                <div class="col-md-4 col-md-offset-4">
@@ -32,7 +37,47 @@
                   <h1><b>CORE COMMITTEE <br class="br-mob">SELECTIONS</b></h1>
                </div>
             </div>
-           
-  </div>
-</body>
+            <div class="row-login col-md-12 text-center">
+              LOG IN
+            </div>
+            <div class="container col-md-4 col-md-offset-4 col-xs-12">
+            <form class="well form-horizontal" action=" " method="post"  id="form">
+               <fieldset>
+                  <!-- Text input-->
+                  <div class="form-group">
+                     <label class="col-md-12 control-label">REGISTRATION NUMBER</label>  
+                     <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group col-md-12">
+                           <input name="regno" id="regno" placeholder="Registration number" class="form-control" type="text">
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Text input-->
+                  <div class="form-group">
+                     <label class="col-md-12 control-label">PASSWORD</label>  
+                     <div class="col-md-12 inputGroupContainer">
+                        <div class="input-group col-md-12">
+                           <input name="password" id="password" placeholder="Enter your Password" class="form-control" type="password">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12 text-center" id="message"></div>
+                  <!-- Button -->
+                  <div class="form-group">
+                     <label class="col-md-4 control-label"></label>
+                     <div class="col-md-12 text-center">
+                        <button id="login" type="submit" class="btn" >Login</button>
+
+                     </div>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+         <div class="col-md-12 row-final text-center">
+            Not registered? <a href='/signup'><i>Sign up</i></a>
+         </div>
+         </div>
+      </div>      <!-- /.container -->
+   </body>
 </html>
+
