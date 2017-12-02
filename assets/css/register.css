@@ -6,15 +6,26 @@
 html,
 body {
     height: 100%;
+    letter-spacing: 0.06em !important;
+    font-family: sans-serif;
 }
 body {
     position: relative;
 }
-
+.form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 1px white;
+    border-radius: 0;
+    padding: 0;
+    height: 80%;
+}
 .panel {    
     background-color: transparent;
-
-    
+}
+.row-2-text h1{
+    color: #ea525f;
+    font-weight: lighter;
 }
 .row-1-text {
     font-family: 'PT Sans', sans-serif;
@@ -95,6 +106,7 @@ img,
 
 .form-group {
     color: white;
+    margin-bottom: 20px;
 }
 .well {
 	background-color: transparent; 
@@ -182,9 +194,38 @@ body {
     margin-bottom: 10px;
 }
 
+input[type="text"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  color: lightgrey;
+  letter-spacing: 0.06em !important;
+  
+}
+input[type="password"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  color: lightgrey;
+  letter-spacing: 0.06em !important;
+  
+}
+input:focus:invalid {
+  outline: none;
+  box-shadow:none !important;
+  border-color: white;
+  border-bottom: 10px !important; 
+  border-style: solid;
+}
+.help-block {
+    margin-top: 10px !important;
+}
 #success_message{ display: none;}
 .form-horizontal .control-label {
     text-align: left;
+    color: #5ec4ff;
+    font-family: 'Source Sans Pro';
+    font-weight: lighter;
+    font-size: 12px;
+    margin-bottom: 8px;
 }
 fieldset legend {
     color: white;
@@ -194,4 +235,14 @@ fieldset legend {
     text-align: left;
 }
 
+.row-bottom {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.row-bottom i {
+    color: #ea525f;
+    border-bottom: 1px solid #ea525f;
+    text-decoration: none;
 
+}

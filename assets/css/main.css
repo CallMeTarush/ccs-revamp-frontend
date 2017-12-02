@@ -6,6 +6,7 @@
 html,
 body {
     height: 100%;
+    letter-spacing: 0.06em;
 }
 body {
     position: relative;
@@ -21,6 +22,11 @@ body {
 .row-3 h1 {
     font-family: 'Open Sans';
     font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+}
+.row-3 {
+
 }
 .wrap {
     height: 100%;
@@ -58,6 +64,7 @@ img,
     border-width: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 45px;
+
     padding-top: 0;
     padding-bottom: 0;
     color: #ea525f;
