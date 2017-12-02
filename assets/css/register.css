@@ -12,6 +12,7 @@ body {
 body {
     position: relative;
 }
+
 .form-control {
     background: transparent;
     border: 0;
@@ -65,6 +66,11 @@ img,
     background-size: cover;
 
 }
+@media only screen and (min-width: 2439px) {
+    .container {
+        height: 100%;
+    }
+}
 @media only screen and (max-width: 768px) {
     .bg {
         width: 100%;
@@ -75,7 +81,7 @@ img,
         z-index: -1;
         background-color: black;
         background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
-        background-size: fill;
+        background-size: cover;
 
     }
 
