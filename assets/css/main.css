@@ -55,7 +55,7 @@ img,
     background: transparent;
     border-style: solid;
     border-color: #5ec4ff;
-    border-width: 3px;
+    border-width: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 45px;
     padding-top: 0;
@@ -131,20 +131,20 @@ img,
         transition: all 0.3s ease-in-out
     }
     button:before {
-        top: -6px;
-        left: -6px;
+        top: -10px;
+        left: -10px;
         border-width: 2px 0 0 2px;
         z-index: 5;
     }
     button:after {
-        bottom: -6px;
-        right: -6px;
+        bottom: -10px;
+        right: -10px;
         border-width: 0 2px 2px 0;
     }
     button:hover:before,
     button:hover:after {
-        width: calc(100% + 12px);
-        height: calc(100% + 12px);
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
         border-color: #5ec4ff;
     }
     button:hover {
