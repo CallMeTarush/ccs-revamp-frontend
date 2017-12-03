@@ -32,7 +32,9 @@ $(document).ready(function () {
                         $('form input').val("");
                         $('#message').html(data.message);
                         console.log(data.message);
-                        window.location = "/login"
+                        if(data.message=="Successfully Registered") {
+                          window.location = "/login";
+                        }
 
                      },
 
