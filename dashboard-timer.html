@@ -15,8 +15,8 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
-      <link rel="stylesheet" href="assets/css/dashboard.css">
-      <script src="assets/js/dashboard.js"></script>
+      <link rel="stylesheet" href="assets/css/dashboard-timer.css">
+      <script src="assets/js/dashboard-timer.js"></script>
    </head>
    <body>
 
@@ -36,49 +36,43 @@
                </div>
             </div>
             <div class="col-md-12 row-2">
-              <div class="col-md-8 col-md-offset-1">
-                Hello, {{Fullname}}. You can attempt one or more sections based on your capability.
-              </div>
-              <div class="col-md-2 text-center">
-                <button id="login" type="submit" class="btn"><i>logout</i></button>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10 col-md-offset-1">
+                  Hello, <i>{{Fullname}}.</i><br> 
+                  Congrats on enrolling for the first round of CCS for the Computer Society of India. The first round will begin on 7th December, 2017.
+                </div>
+              </div>  
+            </div>
+            
+            <div class="col-md-12 row-3">
+              <div class="text-center">
+                <div class="logos">
+                  <img src="assets/images/fb-logo.png" alt="logo" />
+                  <h1>@csivitu</h1>
 
+                  <img src="assets/images/ig-logo.png" alt="logo" />
+                  <h1>@csivitu</h1>
+
+                  <img src="assets/images/twitter-logo.png" alt="logo" />
+                  <h1>@csivitu</h1>
+
+                  <img src="assets/images/sc-logo.jpg" alt="logo" />
+                  <h1>@csivitu</h1>
+
+                  <img src="assets/images/github-logo.png" alt="logo" />
+                  <h1>@csivitu</h1>
+                </div>
               </div>
             </div>
-            <div class="col-md-12 row-3 col-sm-12">
-              <div class="col-md-12 col-sm-12">
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Design 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Develop
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Manage 
-                    </div>
-                  </div>
-                </div>
-                
-              </div>   
-         </div>
+            <div class="col-md-12 text-center">
+              <p id="demo"></p>
+              <div class="info-text">
+                upto first round
+              </div>
+            </div>
+          </div>
+                   
+
       </div>      <!-- /.container -->
    </body>
 </html>
