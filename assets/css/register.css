@@ -58,6 +58,7 @@ input.form-control {
 .row-1-text {
     font-family: 'PT Sans', sans-serif;
     color: white;
+    margin-bottom: 3%;
 }
 @media screen and (min-width: 768px) {
     .br-mob {
@@ -119,7 +120,9 @@ img,
         width: 100% !important;
         height: auto;
     }
-
+    .row-1-text {
+        margin-bottom: 10%;
+    }
     .row-1-text h1{
         font-size: 23px;
     }
