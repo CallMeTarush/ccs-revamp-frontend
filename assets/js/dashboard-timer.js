@@ -1,3 +1,11 @@
+$(document).ready(function() {
+
+  $.get("demo_test.asp", function(data, status){
+      
+    $("#user.name").html(data.message);
+  
+  });
+});
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 7, 2017 23:59:59").getTime();
 
