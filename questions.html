@@ -5,48 +5,62 @@
    <head>
       <title> Computer Society of india - CCS </title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-      <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  
+
       <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallaxify/0.0.2/jquery.parallaxify.js"></script>
-      
-      <link rel="stylesheet" href="assets/css/main.css">
-      
-      <script src="assets/js/main.js"></script>
-      
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
+      <link rel="stylesheet" href="assets/css/questions.css">
+      <script src="assets/js/questions.js"></script>
    </head>
-   <body onload="myFunction()" style="margin:0;">
-   <div id="loader-container">
-      <div id="loader"></div>
-   </div>
+   <body>
 
-      <div class="wrap" id="myDiv">
-            <div class="bg"></div> 
-            <!-- <div id="bg-parallel" data-parallaxify-background-range="100"></div> -->
+
+      <div class="container col-md-12 col-xs-12" id="myDiv">
+
+          <div class="bg"></div> 
+          <div class="upar-walla">
+          <!-- <div id="bg-parallel" data-parallaxify-background-range="100"></div> -->
             <div class="col-md-12 text-center row-logo">
                <div class="col-md-4 col-md-offset-4">
                   <img src="assets/images/csi_typeface.png" class="csi-img">
                </div>
             </div>
-            <div class="row col-md-12 text-center">
+             <div class="row col-md-12 text-center">
                <div class="row-1-text">
                   <h1><b>CORE COMMITTEE <br class="br-mob">SELECTIONS</b></h1>
                </div>
             </div>
-            <div class="row-2 col-md-12 text-center">
-               <h1>We do things<br class="br-mob"> that <span id="matter"><i>matter</i></span><span id="dot">.</span></h1>
+            <div class="col-md-10 col-md-offset-1">
+               <div class="row col-md-10 col-md-offset-1 row-1">
+                  <div class="col-md-6 user-text">
+                     Hello, <span class="user-name">{{user-name}}</span>. Do your best. 
+                  </div>
+                  <div class="col-md-3 col-md-offset-3 text-center time">
+                     {{rem-time}} 
+                  </div>
+               </div>
+               <div class="row col-md-10 col-md-offset-1 row-2">
+                  <span id="q-no"> Q. {{qno}}/10 - </span>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem magna, pretium eu dolor varius, sagittis varius enim. Maecenas sodales maximus metus, facilisis ultricies ante ornare tincidunt. Nam vel lorem fringilla, dictum tortor id, lacinia lacus. Pellentesque consectetur bibendum lorem. Donec metus leo, sodales quis nisi sit amet, mattis volutpat felis.
+               </div>
+               <div class="col-md-10 col-md-offset-1 row-3">
+                  <textarea class="form-control" rows="7" placeholder="Your answer here." required></textarea>
+               </div>
             </div>
-            <div class="row-3 text-center col-md-12">
-                <h1>Do you? &nbsp <br class="br-mob"><div class="mob-row-3"> <i>Then</i>&nbsp&nbsp 
-               <button class="btn" id="btn-join" onclick="location.href = '/signup';" ><i>&nbsp&nbsp&nbspJoin Us&nbsp&nbsp&nbsp</i></button></h1>
+            <div class="col-md-12 text-center">
+               <button id="submit-answer" type="submit" class="btn">Next<span class="glyphicon glyphicon-play"></span>
+               </button>
             </div>
-      </div>
-      <!-- Effect inspired by https://codepen.io/supah/pen/RrzREx -->
+         </div>
+      </div>      <!-- /.container -->
    </body>
 </html>
 

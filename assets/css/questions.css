@@ -1,0 +1,254 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    letter-spacing: 0.06em !important;
+    font-family: sans-serif;
+}
+body {
+    position: relative;
+    background-color: #12131e
+}
+
+@media screen and (min-width: 768px) {
+    .br-mob {
+        display: none;
+    }
+}
+.row-1-text {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
+
+.btn {
+    background: transparent;
+    border-style: solid;
+    border-color: #5ec4ff;
+    border-width: 2px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+
+    margin: 5% 0;
+
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #ea525f;
+    border-radius: 0;
+}
+
+.csi-img {
+    width: 80% !important;
+    height: auto;
+}
+.container {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden !important;
+}
+.bg {
+    overflow: hidden;
+}
+img,
+.bg {} .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    background: url('https://imgur.com/FMiKw3l.png') no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1);
+}
+@media only screen and (min-width: 2439px) {
+    .container {
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: black;
+        background: url('https://imgur.com/V9WyzeD.png') repeat center center;
+        background-size: cover;
+        transform: scale(1.1);
+    }
+
+    .csi-img img{
+        width: 100% !important;
+        height: auto;
+    }
+
+    .row-1-text h1{
+        font-size: 23px;
+    }
+    .csi-img {
+        width: 60% !important;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .br-pradyun {
+        display: block;
+    }
+    .csi-img {
+        width: 50% !important;
+        height: auto;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .br-mob {
+        display: none;
+    }
+    button {
+        color: #5ec4ff;
+        background: transparent;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #5ec4ff;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+        font-family: comfortaa;
+        font-weight: bold
+    }
+    button:before,
+    button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-color: #5ec4ff;
+        box-sizing: border-box;
+        border-style: solid;
+        width: 1em;
+        height: 1em;
+        transition: all 0.3s ease-in-out
+    }
+    button:before {
+        top: -10px;
+        left: -10px;
+        border-width: 2px 0 0 2px;
+        z-index: 5;
+    }
+    button:after {
+        bottom: -10px;
+        right: -10px;
+        border-width: 0 2px 2px 0;
+    }
+    button:hover:before,
+    button:hover:after {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        border-color: #5ec4ff;
+    }
+    button:hover {
+        color: #ea525f !important;
+        background-color: transparent;
+        border-color: #5ec4ff;
+    }
+}
+
+
+.row-logo {
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+    .br-pradyun {
+        display: block;
+    }
+    .csi-img {
+        width: 50% !important;
+        height: auto;
+    }
+    .row-1 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) {
+    
+    .bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: black;
+        background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
+        background-size: cover;
+        transform: scale(1.1);
+    }
+    .btn {
+        font-size: 15px;
+        border-width: 1px;
+    }
+    .csi-img {
+        width: 60% !important;
+        height: auto;
+    }
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden !important;
+}
+.user-text {
+    display: inline;
+    vertical-align: middle;
+}
+.time {
+    border-color: #5ec4ff;
+    border-style: solid;
+    display: inline;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.row-1 {
+    color: #f7f7ff;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 0.08em;
+}
+.row-2 {
+    color: #f7f7ff;
+    margin-top: 5%;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 0.08em;    
+}
+.row-3 {
+    margin-top: 5%;
+}
+.row-3 textarea {
+    background: #12131e;
+    border-color: #ea525f;
+    border-width: 3px;
+    border-radius: 0;
+    color: #f7f7ff;
+}
+
+#q-no {
+    color: #ea525f;
+    font-weight: normal;
+}
+.user-name {
+    display: inline;
+    color: #5ec4ff;
+}
+
