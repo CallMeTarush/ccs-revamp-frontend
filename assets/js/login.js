@@ -20,7 +20,9 @@ $(document).ready(function () {
                      data: user,
 
                      success: function (data, textStatus, xhr) {
-                        window.location = "https://ccs.csivit.com/dashboard-timer";
+
+                        console.log(data);
+                        window.location = "https://ccs.csivit.com/dashboard";
                         
                      },
 
