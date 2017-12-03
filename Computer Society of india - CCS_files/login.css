@@ -87,9 +87,7 @@ img,
         background-size: cover;
         transform: scale(1.1);
     }
-    .row-final {
-        z-index: -1;
-    }
+
     .csi-img img{
         width: 100% !important;
         height: auto;
@@ -109,10 +107,6 @@ img,
 @media only screen and (max-width: 1000px) and (min-width: 768px) {
     .br-pradyun {
         display: block;
-    }
-    
-    .row-final {
-        z-index: -1;
     }
     .csi-img {
         width: 50% !important;
@@ -327,7 +321,7 @@ fieldset legend {
     margin-bottom: 0; 
 }
 .row-final {
-
+    z-index: -1 !important;
 
     font-size: 20px;
     color: #eee;
@@ -345,8 +339,8 @@ fieldset legend {
     border-right: 0; 
     border-color: #ea525f;
 }
-.row-final a:hover {
-    border: 0;
+.row-final i:hover {
+    border-color: #5ec4ff ;
 }
 #message {
     color: white !important;
