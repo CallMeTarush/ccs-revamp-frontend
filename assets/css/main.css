@@ -11,6 +11,7 @@ body {
 }
 body {
     position: relative;
+    background-color: #12131e;
 }
 .row-1-text {
     font-family: 'PT Sans', sans-serif;
