@@ -186,6 +186,9 @@ img,
     }
 }
 @media only screen and (max-width: 768px) {
+    #loader {
+        left: 52.5% !important;
+    }
     .bg {
         width: 100%;
         height: 100%;
