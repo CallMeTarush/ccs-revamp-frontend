@@ -31,6 +31,7 @@ $(document).ready(function () {
                          console.log(data);
                         $('form input').val("");
                         $('#message').html(data.message);
+                        console.log(data.message);
                         window.location = "/login"
 
                      },
