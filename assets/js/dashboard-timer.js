@@ -30,13 +30,15 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    window.location = "https://ccs.csivit.com/login";
+    document.cookie = "";
+    window.location = "/";
   }
 }, 1000);
 
 $(document).ready(function () {
   $("#logout").click(function () {
-    window.location = "https://ccs.csivit.com/login";
+    document.cookie = "";
+    window.location = "/";
   });
 });
 
