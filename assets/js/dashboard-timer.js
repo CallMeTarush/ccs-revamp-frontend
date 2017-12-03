@@ -6,6 +6,7 @@ $(document).ready(function() {
   
   });
 });
+
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 7, 2017 23:59:59").getTime();
 
@@ -25,7 +26,7 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + " days : " + hours + " hr : " + minutes + " min : " + seconds + " sec ";
+  document.getElementById("demo").innerHTML = days + " days <span class='lap-show'>:</span><br class='br-mob'> " + hours + " hr <span class='lap-show'>:</span><br class='br-mob'> " + minutes + " min <span class='lap-show'>:</span><br class='br-mob'> " + seconds + " sec ";
 
   // If the count down is finished, write some text
   if (distance < 0) {

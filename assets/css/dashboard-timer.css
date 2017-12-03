@@ -57,6 +57,9 @@ img,
     }
 }
 @media only screen and (max-width: 768px) {
+    .lap-show {
+        display: none;
+    }
     .bg {
         width: 100%;
         height: 100%;
@@ -94,9 +97,7 @@ img,
     .choice {
         margin-top: 5%;
     }
-    .logos h1 {
-        display: none !important;
-    }
+
 
 }
 @media only screen and (max-width: 1000px) and (min-width: 768px) {
@@ -249,4 +250,8 @@ body {
 .logos a:hover {
     color: #ea525f;
     text-decoration: none;
+}
+
+#demo {
+    font-size: 35px;
 }

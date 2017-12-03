@@ -87,6 +87,11 @@ img,
         background-size: cover;
         transform: scale(1.1);
     }
+    .row-login {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        font-size: 35px !important;
+    }
     .row-final {
         z-index: -1;
     }
