@@ -93,7 +93,9 @@ img,
         font-size: 35px !important;
     }
     .row-final {
-        z-index: -1;
+        display: inline-block;
+        width: 100%;
+        text-align: center !important;
     }
     .csi-img img{
         width: 100% !important;
