@@ -313,12 +313,18 @@ fieldset legend {
     font-size: 20px;
     color: #eee;
 }
+.row-final a:hover {
+    text-decoration: none;
+}
+.row-final i:hover {
+    color: #5ec4ff;
+    border-color: #5ec4ff !important;
+}
 .row-final i {
     padding-bottom: 3px;
     color: #ea525f;
     border-bottom: 2px solid #ea525f;
     text-decoration: none;
-
 }
 #message {
     color: white !important;

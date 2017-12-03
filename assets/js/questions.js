@@ -1,3 +1,11 @@
+$(document).ready(function() {
+  
+  $.get("/questions/technical", function(data, status){
+      
+    $("#user.name").html(data.message);
+  
+  });
+});
 
  var lFollowX = 0,
     lFollowY = 0,
