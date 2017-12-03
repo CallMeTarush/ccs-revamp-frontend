@@ -31,7 +31,7 @@ $(document).ready(function () {
                          console.log(data);
                         $('form input').val("");
                         $('#message').html(data.message);
-                        window.location = "ccs.csivit.com/login"
+                        window.location = "/login"
 
                      },
 
