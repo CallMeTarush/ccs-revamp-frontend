@@ -22,7 +22,7 @@ $(document).ready(function () {
                      success: function (data, textStatus, xhr) {
 
                         console.log(data);
-                        window.location = "https://ccs.csivit.com/dashboard";
+                        window.location = "https://ccs.csivit.com/dashboard-timer";
                         
                      },
 
