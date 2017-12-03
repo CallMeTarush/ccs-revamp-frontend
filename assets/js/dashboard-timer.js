@@ -22,9 +22,15 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    window.location = "https://ccs.csivit.com/login";
   }
 }, 1000);
+
+$(document).ready(function () {
+  $("#logout").click(function () {
+    window.location = "https://ccs.csivit.com/login";
+  });
+});
 
  var lFollowX = 0,
     lFollowY = 0,

@@ -68,7 +68,9 @@ img,
         background-size: cover;
         transform: scale(1.1);
     }
-
+    .br-mob {
+        margin: 2.5% 0;
+    }
     .csi-img img{
         width: 100% !important;
         height: auto;
@@ -80,6 +82,7 @@ img,
     .btn {
         width: 40% !important;
         margin-top: 5%;
+        margin-bottom: 5%;
     }
     .row-3 {
         margin-top: 5%;
@@ -121,17 +124,22 @@ body {
     font-size: 20px;
     font-weight: lighter;
     padding-top: 0;
+    margin-top: 5%;
     padding-bottom: 0;
     color: #ea525f;
     border-radius: 0;
 }
-
+.btn i {
+    color: #ea525f;
+    font-weight: lighter;
+}
 @media screen and (min-width: 768px) {
     .br-mob {
         display: none;
+        
     }
     .btn {
-        width: 100%;
+        width: 15%;
         font-size: 27px;
     }
     button {

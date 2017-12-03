@@ -292,4 +292,9 @@ img,
   to{ bottom:0; opacity:1 }
 }
 
+.container {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden !important;
+}
 
