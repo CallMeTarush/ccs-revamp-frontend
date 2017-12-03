@@ -3,7 +3,7 @@
 
  function loaderFunction() {
      document.getElementById("myDiv").style.display = "none";
-     myVar = setTimeout(showPage, 2300);
+     myVar = setTimeout(showPage, 10);
 }
 function showPage() {
   document.getElementById("loader-container").style.display = "none";
