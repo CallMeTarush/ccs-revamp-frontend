@@ -138,9 +138,8 @@ body {
     border-width: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+    font-weight: bold;
 
-    padding-top: 0;
-    padding-bottom: 0;
     color: #ea525f;
     border-radius: 0;
 }
@@ -303,7 +302,7 @@ input:focus:invalid {
     color: #5ec4ff;
     font-family: 'Source Sans Pro';
     font-weight: lighter;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 8px;
 }
 fieldset legend {
@@ -317,20 +316,37 @@ fieldset legend {
 .row-login {
     color: #ea525f;
     font-size: 40px;
-    margin: 30px 0; 
+    margin-top: 100px;
+
+    margin-bottom: 0px; 
 }
 .container-form {
     height: 100%;
     border-bottom: 0;
+    
 }
 .well {
     margin-bottom: 0; 
 }
 .row-final {
-
-
+    font-weight: lighter;
     font-size: 20px;
     color: #eee;
+}
+.row-final a {
+    font-weight: bold;
+    color: #ea525f;
+    padding-bottom: 3px;
+    border-bottom-style: solid !important;
+    border-bottom: 2px;
+    border-bottom-color: #ea525f;
+}
+.row-final i {
+    padding-bottom: 3px;
+    border-bottom-style: solid !important;
+    border-bottom: 2px;
+    border-bottom-color: #ea525f;
+   
 }
 .row-login-btn {
     margin-top: 0;
@@ -351,3 +367,36 @@ fieldset legend {
 #message {
     color: white !important;
 }
+
+.form-control {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 1px white;
+    border-radius: 0;
+    padding: 2% 0;
+    height: 80%;
+    font-size: 16px;
+}
+input.form-control {
+    padding-bottom: 1%;
+}
+.form-control::-webkit-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+  .form-control:-ms-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  .form-control:-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    }
+  
+  .form-control::-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  

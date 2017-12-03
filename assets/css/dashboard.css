@@ -190,7 +190,7 @@ body {
 .row-2 {
     margin: 5% 0;
 
-    font-size: 20px;
+    font-size: 25px;
     color: #f7f7ff;
     font-weight: lighter;
 }
@@ -205,5 +205,6 @@ body {
 .choice-text {
     color: #ea525f;
     font-size: 40px;
+    font-weight: bold;
     letter-spacing: 0.1em !important;
 }

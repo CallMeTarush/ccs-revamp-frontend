@@ -18,9 +18,36 @@ body {
     border: 0;
     border-bottom: solid 1px white;
     border-radius: 0;
-    padding: 0;
+    padding: 2% 0;
     height: 80%;
+    font-size: 16px;
 }
+input.form-control {
+    padding-bottom:4px;
+    padding-top: 1%;
+    margin-bottom: 5px !important;
+}
+.form-control::-webkit-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+  .form-control:-ms-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
+  
+  .form-control:-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    }
+  
+  .form-control::-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+
 .panel {    
     background-color: transparent;
 }
@@ -123,6 +150,7 @@ img,
 	background-color: transparent; 
 	border: 0;
 }
+
 .btn {
     background: transparent;
     border-style: solid;
@@ -130,9 +158,9 @@ img,
     border-width: 2px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
+    font-weight: bold;
 
-    padding-top: 0;
-    padding-bottom: 0;
+    
     color: #ea525f;
     border-radius: 0;
 }
@@ -279,11 +307,14 @@ input:focus:invalid {
   border-style: solid;
 }
 .help-block {
-    margin-top: 30px !important;
+    margin-top: 39px !important;
+    font-size: 14px;
 }
 #info-text {
     font-weight: lighter;
     color: #ea525f !important;
+    margin-top: 2%;
+    margin-bottom: -2%;
 }
 .email-pad {
     padding-bottom: 10px;
@@ -294,8 +325,9 @@ input:focus:invalid {
     color: #5ec4ff;
     font-family: 'Source Sans Pro';
     font-weight: lighter;
-    font-size: 12px;
-    margin-bottom: 8px;
+    font-size: 14px;
+
+    margin-bottom: 4px;
 }
 fieldset legend {
     color: white;
@@ -303,6 +335,7 @@ fieldset legend {
 }
 .form-group label {
     text-align: left;
+    font-size: 14px;
 }
 .row-login {
     color: #ea525f;
