@@ -100,6 +100,9 @@ img,
         width: 60% !important;
         height: auto;
     }
+    .btn {
+        z-index: 1000;
+    }
 }
 @media only screen and (max-width: 1000px) and (min-width: 768px) {
     .br-pradyun {
@@ -230,6 +233,7 @@ body {
     .well {
         padding: 0;
     }
+
 }
 body {
     background-color: #10101e;
@@ -310,22 +314,12 @@ fieldset legend {
     margin: 30px 0; 
 }
 .row-final {
+    z-index: -1 !important;
+    padding-top: 0 !important;
     font-size: 20px;
     color: #eee;
 }
-.row-final a:hover {
-    text-decoration: none;
-}
-.row-final i:hover {
-    color: #5ec4ff;
-    border-color: #5ec4ff !important;
-}
-.row-final i {
-    padding-bottom: 3px;
-    color: #ea525f;
-    border-bottom: 2px solid #ea525f;
-    text-decoration: none;
-}
+
 #message {
     color: white !important;
 }
