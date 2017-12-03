@@ -15,14 +15,20 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
       <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/css/bootstrapValidator.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
       <link rel="stylesheet" href="assets/css/register.css">
       <script src="assets/js/register.js"></script>
    </head>
    <body>
+      <div id="loader" class="pageload-overlay" data-opening="M 0,0 80,-10 80,60 0,70 0,0" data-closing="M 0,-10 80,-20 80,-10 0,0 0,-10">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="none">
+            <path d="M 0,70 80,60 80,80 0,80 0,70"/>
+         </svg>
+      </div><!-- /pageload-overlay -->
 
-      <div class="container col-md-12 col-xs-12">
+      <div class="container col-md-12 col-xs-12" id="myDiv">
 
           <div class="bg"></div> 
           <div class="upar-walla">

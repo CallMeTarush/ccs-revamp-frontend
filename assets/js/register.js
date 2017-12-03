@@ -3,14 +3,19 @@ $(document).ready(function () {
     $("#signup").click(function () {
 
                 
-		$("#message").html('');
+    $("#message").html('');
+                 var checker = $('#confpassword').val();
                  var user = new Object();
                  user.name = $('#name').val();
                  user.email = $('#email').val();
                  user.regno = $('#regno').val();
                  user.phone = $('#phone').val();
                  user.password = $('#password').val();
-
+                 
+                 if(checker==null || checker == "") {
+                  console.log('Enter confirm password you noob');
+                 }
+                 else {
                  $.ajax({
 
                      url: 'https://ccs.csivit.com/signup',
@@ -24,8 +29,8 @@ $(document).ready(function () {
                      success: function (data, textStatus, xhr) {
 
                          console.log(data);
-			$('form input').val("");
-			$('#message').html(data.message);
+                        $('form input').val("");
+                        $('#message').html(data.message);
 
                      },
 
@@ -35,6 +40,7 @@ $(document).ready(function () {
 
             }
         });
+                }
     });
         $('#form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
@@ -102,11 +108,12 @@ $(document).ready(function () {
                     identical: {
                         field: 'password',
                         message: 'The passwords do not match.'
-                        }
-                    },
+                        },
+                    
                     notEmpty: {
                         message: 'This field can not be empty.'
                     }
+                  }
                 }
             }
         })
@@ -154,4 +161,3 @@ $(window).on('mousemove click', function(e) {
 });
 
 moveBackground();
-

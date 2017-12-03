@@ -29,7 +29,7 @@ $(document).ready(function () {
                      error: function (xhr, textStatus, errorThrown) {
 
                          console.log('Error in Operation');
-                          $("#message").html('Incorrect password');
+                          $("#message").html(data.message);
                       }
         });
     });

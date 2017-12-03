@@ -12,41 +12,19 @@ body {
 body {
     position: relative;
 }
-
-.form-control {
-    background: transparent;
-    border: 0;
-    border-bottom: solid 1px white;
-    border-radius: 0;
-    padding: 0;
-    height: 80%;
-}
-.panel {    
-    background-color: transparent;
-}
-.row-2-text h1{
-    color: #ea525f;
-    font-weight: lighter;
-}
-.row-1-text {
-    font-family: 'PT Sans', sans-serif;
-    color: white;
-}
 @media screen and (min-width: 768px) {
     .br-mob {
         display: none;
     }
 }
-.row-logo {
-    margin-top: 5vh;
-    margin-bottom: 0;
-}
 
+.row-1-text {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+}
 .csi-img {
     width: 80% !important;
     height: auto;
-}
-.logo-container {
 }
 .container {
     height: 100%;
@@ -92,10 +70,6 @@ img,
         width: 100% !important;
         height: auto;
     }
-
-    .row-1-text h1{
-        font-size: 23px;
-    }
     .csi-img {
         width: 60% !important;
         height: auto;
@@ -110,18 +84,8 @@ img,
         height: auto;
     }
 }
-
-#success_message{ display: none;}
-#message {
-    color: white;
-}
-.form-group {
-    color: white;
-    margin-bottom: 20px;
-}
-.well {
-	background-color: transparent; 
-	border: 0;
+body {
+    background-color: #10101e;
 }
 .btn {
     background: transparent;
@@ -189,159 +153,20 @@ img,
         color: #ea525f !important;
     }
 }
-#loginbox {
-    margin-top: 30px;
-}
-
-#loginbox > div:first-child {        
-    padding-bottom: 10px;    
-}
-
-.iconmelon {
-    display: block;
-    margin: auto;
-}
-
-#form > div {
-    margin-bottom: 25px;
-}
-
-#form > div:last-child {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.panel {    
-    background-color: transparent;
-    padding: 0;
-}
-
-.panel-body {
-    margin-top: 10%;
-}
-.form-container {
-	margin-top: 5%;
-}
-.img-container {
-	margin: 10% 0;
-}
-
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .well {
-    	padding: 0;
-    }
-}
 body {
     background-color: #10101e;
 }
-
-#loginbox {
-    margin-top: 30px;
+.choice {
+    background: 
+    height: 20vh;
 }
-
-#loginbox > div:first-child {        
-    padding-bottom: 10px;    
+.choice-data {
+    margin: 0 10%;
+    background: white;
+    height: 30vh;
 }
-
-#form > div {
-    margin-bottom: 25px;
-}
-
-#form > div:last-child {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.input-group {
-    width: 100%;
-}
-
-input[type="text"], textarea {
-  outline: none;
-  box-shadow:none !important;
-  color: lightgrey;
-  letter-spacing: 0.06em !important;
-  
-}
-input[type="password"], textarea {
-  outline: none;
-  box-shadow:none !important;
-  color: lightgrey;
-  letter-spacing: 0.06em !important;
-  
-}
-input:focus:invalid {
-  outline: none;
-  box-shadow:none !important;
-  border-color: white;
-  border-bottom: 10px !important; 
-  border-style: solid;
-}
-.help-block {
-    margin-top: 30px !important;
-}
-#info-text {
-    font-weight: lighter;
-    color: #ea525f !important;
-}
-.email-pad {
-    padding-bottom: 10px;
-}
-#success_message{ display: none;}
-.form-horizontal .control-label {
-    text-align: left;
-    color: #5ec4ff;
-    font-family: 'Source Sans Pro';
-    font-weight: lighter;
-    font-size: 12px;
-    margin-bottom: 8px;
-}
-fieldset legend {
-    color: white;
-
-}
-.form-group label {
-    text-align: left;
-}
-.row-login {
-    color: #ea525f;
-}
-.row-bottom {
-    color: white;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-.row-bottom i {
-    color: #ea525f;
-    border-bottom: 1px solid #ea525f;
-    text-decoration: none;
-
-}
-
-.has-success .form-control {
-    border-color: white !important;
-    border-width: 2px;
-}
-.pageload-overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-}
-
-.pageload-overlay.show {
-    visibility: visible;
-}
-
-.pageload-overlay svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.pageload-overlay svg path {
-    fill: #fff;
+@media only screen and (max-width: 1000px) {
+    .choice-data {
+        margin: 10%;
+    }
 }

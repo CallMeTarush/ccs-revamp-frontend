@@ -1,27 +1,9 @@
-document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage);
-
-function showPage() {
-  document.body.classList.remove('js-loading');
-}
-// var myVar;
-
-// function myFunction() {
-//     document.getElementById("myDiv").style.display = "none";
-//     myVar = setTimeout(showPage, 2000);
-// }
-
-// function showPage() {
-//   document.getElementById("loader-container").style.display = "none";
-//   document.getElementById("myDiv").style.display = "block";
-// }
-
-var lFollowX = 0,
-  lFollowY = 0,
-  x = 0,
-  y = 0,
-  friction = 1 / 30;
+ var lFollowX = 0,
+    lFollowY = 0,
+    x = 0,
+    y = 0,
+    friction = 1 / 30;
 
 function moveBackground() {
   x += (lFollowX - x) * friction;

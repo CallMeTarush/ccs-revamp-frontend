@@ -287,7 +287,7 @@ input:focus:invalid {
 .email-pad {
     padding-bottom: 10px;
 }
-#success_message{ display: none;}
+
 .form-horizontal .control-label {
     text-align: left;
     color: #5ec4ff;
@@ -319,4 +319,7 @@ fieldset legend {
     border-bottom: 2px solid #ea525f;
     text-decoration: none;
 
+}
+#message {
+    color: white !important;
 }
