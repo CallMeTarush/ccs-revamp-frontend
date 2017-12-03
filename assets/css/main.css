@@ -197,7 +197,7 @@ img,
         left: 0;
         z-index: -1;
         background-color: black;
-        background: url('https://imgur.com/V9WyzeD.png') no-repeat center center;
+        background: url('https://imgur.com/V9WyzeD.png') repeat center center;
         background-size: cover;
         transform: scale(1.1);
     }
@@ -295,9 +295,10 @@ img,
 .container {
     height: 100%;
     position: relative;
-    background: #12131e;
+
     overflow-x: hidden !important;
 }
 .row-3 {
     margin-bottom: 3%;
+
 }
