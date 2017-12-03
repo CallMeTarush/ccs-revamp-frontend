@@ -1,21 +1,14 @@
-document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage);
+ var myVar;
 
-function showPage() {
-  document.body.classList.remove('js-loading');
+ function myFunction() {
+     document.getElementById("myDiv").style.display = "none";
+     myVar = setTimeout(showPage, 2300);
 }
-// var myVar;
-
-// function myFunction() {
-//     document.getElementById("myDiv").style.display = "none";
-//     myVar = setTimeout(showPage, 2000);
-// }
-
-// function showPage() {
-//   document.getElementById("loader-container").style.display = "none";
-//   document.getElementById("myDiv").style.display = "block";
-// }
+function showPage() {
+  document.getElementById("loader-container").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
 
 var lFollowX = 0,
   lFollowY = 0,
