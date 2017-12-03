@@ -31,7 +31,6 @@ $(document).ready(function () {
                          console.log(data);
                         $('form input').val("");
                         $('#message').html(data.message);
-                        console.log(data.message);
                         if(data.message=="Successfully Registered") {
                           window.location = "/login";
                         }
