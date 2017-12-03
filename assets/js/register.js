@@ -28,7 +28,6 @@ $(document).ready(function () {
 
                      success: function (data, textStatus, xhr) {
 
-                         console.log(data);
                         $('form input').val("");
                         $('#message').html(data.message);
                         if(data.message=="Successfully Registered") {
