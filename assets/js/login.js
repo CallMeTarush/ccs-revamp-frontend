@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $("#login-chk").click(function () {
+    $("#login").click(function () {
 
                 
                  $("#message").html('');

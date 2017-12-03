@@ -17,6 +17,7 @@ body {
         display: none;
     }
 }
+
 .row-logo {
     margin-top: 5vh;
     margin-bottom: 0;
@@ -71,6 +72,7 @@ img,
     .br-mob {
         margin: 2.5% 0;
     }
+
     .csi-img img{
         width: 100% !important;
         height: auto;
@@ -91,6 +93,9 @@ img,
     }
     .choice {
         margin-top: 5%;
+    }
+    .logos h1 {
+        display: none !important;
     }
 
 }
