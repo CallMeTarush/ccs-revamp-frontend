@@ -37,7 +37,7 @@ function getImage()
      document.getElementById("question_img").style.display = "none";
   }
   else {
-    document.getElementById("question_img").src= "ccs.csivit.com/images/" + questions[ques_counter].imagepath;
+    document.getElementById("question_img").src= "ccs.csivit.com/images" + questions[ques_counter].imagepath;
   }
 }
 
@@ -93,7 +93,8 @@ function run_clock(id,endtime){
   function update_clock(){
     var t = time_remaining(endtime);
     clock.innerHTML = 'minutes: '+t.minutes+'<br>seconds: '+t.seconds;
-    if(t.total<=0){ 
+    
+    if(t.total == 0){ 
       postAnswer();
       window.location = "ccs.csivit.com/dashboard";
     }
@@ -103,6 +104,10 @@ function run_clock(id,endtime){
       window.location = "ccs.csivit.com/dashboard";
     }
 
+    if(t.minutes < 0 && t.seconds>0) {
+      postAnswer();
+      window.location = "ccs.csivit.com/dashboard";
+    }
   }
   update_clock(); // run function once at first to avoid delay
   var timeinterval = setInterval(update_clock,1000);
