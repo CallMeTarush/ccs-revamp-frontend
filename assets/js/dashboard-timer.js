@@ -1,10 +1,5 @@
 $(document).ready(function() {
-
-  console.log(document.cookie);
-  if(document.cookie = "") {
-    window.location = "/login";
-  }
-   
+ 
   $.get("demo_test.asp", function(data, status){
       
     $("#user.name").html(data.message);
@@ -12,8 +7,7 @@ $(document).ready(function() {
   });
   $("#logout").click(function () {
     
-    document.cookie = "";
-    window.location = "/login";
+    window.location = "/logout";
 
   });
 });
