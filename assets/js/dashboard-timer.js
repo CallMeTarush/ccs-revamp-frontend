@@ -11,6 +11,7 @@ $(document).ready(function() {
   
   });
   $("#logout").click(function () {
+    
     document.cookie = "";
     window.location = "/login";
 

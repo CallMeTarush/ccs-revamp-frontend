@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    console.log(document.cookie);
     $("#login").click(function () {
 
                 
@@ -24,7 +24,7 @@ $(document).ready(function () {
                         console.log(data);
                         if(data.message == "You have not registered for CSI-VIT CCS.")
                         {
-                          ;
+                          $("#message").html(data.message);
                         }
                         else {
                           window.location = "https://ccs.csivit.com/dashboard-timer";
@@ -33,9 +33,7 @@ $(document).ready(function () {
 
                      error: function (xhr, textStatus, errorThrown) {
 
-                        console.log(data);
                         console.log('Error in Operation');
-
                         $("#message").html(data.message);
                       }
         });
