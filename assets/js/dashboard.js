@@ -13,7 +13,9 @@ $(document).ready(function () {
     document.getElementById("management").style.opacity = "0.6";
   }
 });
-
+function logout() {
+  window.location = "/dashboard";
+}
 function designClick() {
   if(data.design) {
     ;
