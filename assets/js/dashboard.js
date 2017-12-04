@@ -18,7 +18,7 @@ document.getElementById("design").onclick = function() {
     ;
   }
   else {
-    window.location = "/startTest/design";
+    window.location = "/startexam/design";
   }
 };
 document.getElementById("technical").onclick = function() {
@@ -26,7 +26,7 @@ document.getElementById("technical").onclick = function() {
     ;
   }
   else {
-    window.location = "/startTest/design";
+    window.location = "/startexam/design";
   }
 };
 document.getElementById("management").onclick = function() {
@@ -34,7 +34,7 @@ document.getElementById("management").onclick = function() {
     ;
   }
   else {
-    window.location = "/startTest/design";
+    window.location = "/startexam/design";
   }
 };
 
