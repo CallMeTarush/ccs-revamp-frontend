@@ -22,14 +22,20 @@ $(document).ready(function () {
                      success: function (data, textStatus, xhr) {
 
                         console.log(data);
-                        window.location = "https://ccs.csivit.com/dashboard-timer";
-                        
+                        if(data.message == "You have not registered for CSI-VIT CCS.")
+                        {
+                          ;
+                        }
+                        else {
+                          window.location = "https://ccs.csivit.com/dashboard-timer";
+                        }
                      },
 
                      error: function (xhr, textStatus, errorThrown) {
 
                         console.log(data);
                         console.log('Error in Operation');
+
                         $("#message").html(data.message);
                       }
         });
