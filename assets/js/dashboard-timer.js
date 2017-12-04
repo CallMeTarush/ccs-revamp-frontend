@@ -1,11 +1,22 @@
 $(document).ready(function() {
 
+  console.log(document.cookie);
+  if(document.cookie = "") {
+    window.location = "/login";
+  }
+   
   $.get("demo_test.asp", function(data, status){
       
     $("#user.name").html(data.message);
   
   });
+  $("#logout").click(function () {
+    document.cookie = "";
+    window.location = "/login";
+
+  });
 });
+
 
 // Set the date we're counting down to
 var countDownDate = new Date("Dec 7, 2017 23:59:59").getTime();
@@ -36,12 +47,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-$(document).ready(function () {
-  $("#logout").click(function () {
-    document.cookie = "";
-    window.location = "/";
-  });
-});
 
  var lFollowX = 0,
     lFollowY = 0,
