@@ -23,7 +23,9 @@ body {
     font-family: 'PT Sans', sans-serif;
     color: white;
 }
-
+.row-1 {
+    margin-bottom: 4%;
+}
 .btn {
     background: transparent;
     border-style: solid;

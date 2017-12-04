@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log(data);
   run_clock('clockdiv',deadline);
   init();
 });
