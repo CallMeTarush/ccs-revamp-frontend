@@ -12,6 +12,7 @@ function init() {
 
 function nextQuestion() {
   incrementValue();
+  getElementById("answer").value = "";
   if(getCounterValue() == 9) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
