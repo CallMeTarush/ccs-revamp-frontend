@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  console.log(data);
   if(data.design =="true") {
      document.getElementById("design").style.cursor = "not-allowed";
      document.getElementById("design").style.opacity = "0.6";
@@ -13,7 +14,7 @@ $(document).ready(function () {
   }
 });
 
-document.getElementById("design").onclick = function() {
+function designClick() {
   if(data.design == "true") {
     ;
   }
@@ -21,20 +22,20 @@ document.getElementById("design").onclick = function() {
     window.location = "/startexam/design";
   }
 };
-document.getElementById("technical").onclick = function() {
+function technicalClick() {
   if(data.technical == "true") {
     ;
   }
   else {
-    window.location = "/startexam/design";
+    window.location = "/startexam/technical";
   }
 };
-document.getElementById("management").onclick = function() {
+function managementClick() {
   if(data.management == "true") {
     ;
   }
   else {
-    window.location = "/startexam/design";
+    window.location = "/startexam/management";
   }
 };
 
