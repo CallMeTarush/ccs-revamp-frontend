@@ -1,21 +1,21 @@
 $(document).ready(function () {
   console.log(data);
-  if(data.design =="true") {
+  if(data.design) {
      document.getElementById("design").style.cursor = "not-allowed";
      document.getElementById("design").style.opacity = "0.6";
   }
-  if(data.technical =="true") {
+  if(data.technical) {
     document.getElementById("technical").style.cursor = "not-allowed";
     document.getElementById("technical").style.opacity = "0.6";
   }
-  if(data.management =="true") {
+  if(data.management) {
     document.getElementById("management").style.cursor = "not-allowed";
     document.getElementById("management").style.opacity = "0.6";
   }
 });
 
 function designClick() {
-  if(data.design == "true") {
+  if(data.design) {
     ;
   }
   else {
@@ -23,7 +23,7 @@ function designClick() {
   }
 };
 function technicalClick() {
-  if(data.technical == "true") {
+  if(data.technical) {
     ;
   }
   else {
@@ -31,7 +31,7 @@ function technicalClick() {
   }
 };
 function managementClick() {
-  if(data.management == "true") {
+  if(data.management) {
     ;
   }
   else {
