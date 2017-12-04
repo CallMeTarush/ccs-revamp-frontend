@@ -18,7 +18,7 @@ function logout() {
 }
 function designClick() {
   if(data.design) {
-    ;
+    alert("Already attempted");
   }
   else {
     window.location = "/startexam/design";
@@ -26,7 +26,7 @@ function designClick() {
 };
 function technicalClick() {
   if(data.technical) {
-    ;
+    alert("Already attempted");
   }
   else {
     window.location = "/startexam/technical";
@@ -34,7 +34,7 @@ function technicalClick() {
 };
 function managementClick() {
   if(data.management) {
-    ;
+    alert("Already attempted");
   }
   else {
     window.location = "/startexam/management";
