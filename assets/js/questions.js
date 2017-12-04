@@ -34,7 +34,7 @@ function incrementValue()
 
 function getImage()
 {  
-  if(questions[ques_counter].imagepath == "") {
+  if(questions[ques_counter].imagepath == undefined) {
      document.getElementById("question_img").style.display = "none";
   }
   else {
