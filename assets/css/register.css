@@ -344,6 +344,8 @@ fieldset legend {
     color: #ea525f;
 }
 .row-bottom {
+    display: inline-block; 
+    width:100% !important;
     color: white;
     margin-top: 0;
     margin-bottom: 40px;
