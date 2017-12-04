@@ -14,7 +14,7 @@ $(document).ready(function () {
   }
 });
 function logout() {
-  window.location = "/dashboard";
+  window.location = "/logout";
 }
 function designClick() {
   if(data.design) {
