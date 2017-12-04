@@ -67,7 +67,7 @@ $(document).ready(function () {
                         message: 'Please supply your email address'
                     },
                     regexp: {
-                        regexp: /^[a-zA-Z]+.[a-zA-Z]*2017@vitstudent\.ac\.in$/,
+                        regexp: /^[a-zA-Z]+.[a-zA-Z]*2017[a-zA-Z]{0,1}@vitstudent\.ac\.in$/,
                         message: 'Please enter your VIT email id'
                     }
                 }
