@@ -373,6 +373,7 @@ fieldset legend {
 }
 #message {
     color: white !important;
+    font-size: 13px;
 }
 
 .form-control {
