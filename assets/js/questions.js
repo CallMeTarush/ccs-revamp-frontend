@@ -1,7 +1,7 @@
 $(document).ready(function () {
   init();
 }
-
+);
 function init() {
   $("#q-no").html("1");
   getImage();
