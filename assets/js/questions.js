@@ -8,7 +8,7 @@ $(document).ready(function () {
     }
     if(left_page==2) {
       postAnswer();
-      window.location = "ccs.csivit.com/dashboard";
+      window.location = "/dashboard";
 
     }
   }
@@ -29,7 +29,7 @@ function nextQuestion() {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
   if(getCounterValue() == questions.length) {
-    window.location = "https://ccs.csivit.com/dashboard";
+    window.location = "/dashboard";
   }
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
@@ -110,19 +110,19 @@ function run_clock(id,endtime){
     
     if(t.total == 0){ 
       postAnswer();
-      window.location = "ccs.csivit.com/dashboard";
+      window.location = "/dashboard";
     }
     
     if(t.minutes>=10 && t.seconds>0) {
       alert("Bad Choice buddy");
       postAnswer();
-      window.location = "ccs.csivit.com/dashboard";
+      window.location = "/dashboard";
     }
 
     if(t.minutes < 0 && t.seconds>0) {
       alert("Bad Choice buddy");
       postAnswer();
-      window.location = "ccs.csivit.com/dashboard";
+      window.location = "/dashboard";
     }
   }
   update_clock(); // run function once at first to avoid delay

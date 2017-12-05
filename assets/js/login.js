@@ -27,7 +27,7 @@ $(document).ready(function () {
                           $("#message").html(data.message);
                         }
                         else {
-                          window.location = "https://ccs.csivit.com/dashboard-timer";
+                          window.location = "/dashboard-timer";
                         }
                      },
 
