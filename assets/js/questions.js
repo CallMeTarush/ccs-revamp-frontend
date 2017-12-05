@@ -102,11 +102,13 @@ function run_clock(id,endtime){
     }
     
     if(t.minutes>=10 && t.seconds>0) {
+      alert("Bad Choice buddy");
       postAnswer();
       window.location = "ccs.csivit.com/dashboard";
     }
 
     if(t.minutes < 0 && t.seconds>0) {
+      alert("Bad Choice buddy");
       postAnswer();
       window.location = "ccs.csivit.com/dashboard";
     }
