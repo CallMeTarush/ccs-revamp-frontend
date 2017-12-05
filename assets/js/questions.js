@@ -12,6 +12,7 @@ function init() {
 function nextQuestion() {
   incrementValue();
   document.getElementById("answer").value = "";
+
   if(getCounterValue() == (questions.length - 1) ) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
@@ -93,7 +94,7 @@ function run_clock(id,endtime){
   var clock = document.getElementById(id);
   function update_clock(){
     var t = time_remaining(endtime);
-    clock.innerHTML = 'minutes: '+t.minutes+'<br>seconds: '+t.seconds;
+    clock.innerHTML = t.minutes+' : '+t.seconds;
     
     if(t.total == 0){ 
       postAnswer();
