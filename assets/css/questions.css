@@ -227,7 +227,7 @@ img,
     font-weight: lighter;
     letter-spacing: 0.08em;
 }
-.row-2 {
+.row-2#span {
     color: #f7f7ff;
     margin-top: 5%;
     font-size: 30px;
