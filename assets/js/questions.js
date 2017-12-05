@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  console.log(data);
   run_clock('clockdiv',deadline);
   init();
 });
@@ -13,10 +12,10 @@ function init() {
 function nextQuestion() {
   incrementValue();
   getElementById("answer").value = "";
-  if(getCounterValue() == 9) {
+  if(getCounterValue() == (questions.length - 1) ) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
-  if(getCounterValue() == 10) {
+  if(getCounterValue() == questions.length) {
     window.location = "https://ccs.csivit.com/dashboard";
   }
   $("#q-no").html(getCounterValue() + 1);
