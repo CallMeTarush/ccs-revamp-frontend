@@ -197,6 +197,8 @@ body {
 
 .choice {
     padding: 0 5%;
+    cursor: pointer;
+    /*cursor: not-allowed;*/
 }
 .choice-img img{
     width: 100% !important;

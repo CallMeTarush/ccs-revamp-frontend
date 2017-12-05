@@ -17,6 +17,11 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
       <link rel="stylesheet" href="assets/css/dashboard.css">
       <script src="assets/js/dashboard.js"></script>
+      <script type="text/javascript">
+
+        data = <%-JSON.stringify(data)%>;
+
+      </script>
    </head>
    <body>
 
@@ -46,42 +51,40 @@
             </div>
             <div class="col-md-12 row-3 col-sm-12">
               <div class="col-md-12 col-sm-12">
-                <a href="/startexam/design">
-                  <div class="col-md-4 col-sm-4">
+
+                  <div class="col-md-4 col-sm-4" id="design">
                     <div class="choice">
                       <div class="choice-img">
-                        <img src="filler.jpg">
+                        <img src="assets/images/design.jpg">
                       </div>
                       <div class="choice-text text-center">
                         Design 
                       </div>
                     </div>
                   </div>
-                </a>
-                <a href="/startexam/technical">
-                  <div class="col-md-4 col-sm-4">
+
+                  <div class="col-md-4 col-sm-4" id="technical">
                     <div class="choice">
                       <div class="choice-img">
-                        <img src="filler.jpg">
+                        <img src="assets/images/technical.png">
                       </div>
                       <div class="choice-text text-center">
                         Develop
                       </div>
                     </div>
                   </div>
-                </a>
-                <a href="/startexam/management">
-                  <div class="col-md-4 col-sm-4">
+
+                  <div class="col-md-4 col-sm-4" id="management">
                     <div class="choice">
                       <div class="choice-img">
-                        <img src="filler.jpg">
+                        <img src="assets/images/manage.png">
                       </div>
                       <div class="choice-text text-center">
                         Manage 
                       </div>
                     </div>
                   </div>
-                </a>
+
               </div>   
          </div>
       </div>      <!-- /.container -->

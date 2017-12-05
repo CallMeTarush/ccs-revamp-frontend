@@ -1,3 +1,43 @@
+$(document).ready(function () {
+  if(data.design =="true") {
+     document.getElementById("design").style.cursor = "not-allowed";
+     document.getElementById("design").style.opacity = "0.6";
+  }
+  if(data.technical =="true") {
+    document.getElementById("technical").style.cursor = "not-allowed";
+    document.getElementById("technical").style.opacity = "0.6";
+  }
+  if(data.management =="true") {
+    document.getElementById("management").style.cursor = "not-allowed";
+    document.getElementById("management").style.opacity = "0.6";
+  }
+});
+
+document.getElementById("design").onclick = function() {
+  if(data.design == "true") {
+    ;
+  }
+  else {
+    window.location = "/starttest/design";
+  }
+};
+document.getElementById("technical").onclick = function() {
+  if(data.technical == "true") {
+    ;
+  }
+  else {
+    window.location = "/starttest/design";
+  }
+};
+document.getElementById("management").onclick = function() {
+  if(data.management == "true") {
+    ;
+  }
+  else {
+    window.location = "/starttest/design";
+  }
+};
+
  var lFollowX = 0,
     lFollowY = 0,
     x = 0,
