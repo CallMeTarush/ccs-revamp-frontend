@@ -45,7 +45,7 @@ function postAnswer() {
 
   answerobj.answer = $('#answer').val();
   answerobj.testId = data.testId;
-  answerobj.questionId = questions[ques_counter].questionId; 
+  answerobj.questionId = questions[ques_counter]._id; 
 
   $.ajax({
 
@@ -55,7 +55,7 @@ function postAnswer() {
 
           dataType: 'json',
 
-          data: answer,
+          data: answerobj,
 
           success: function (data, textStatus, xhr) {
             console.log("Posted!");
