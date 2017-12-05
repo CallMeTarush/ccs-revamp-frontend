@@ -13,6 +13,13 @@ $(document).ready(function () {
     document.getElementById("management").style.opacity = "0.6";
   }
 });
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
 function logout() {
   window.location = "/logout";
 }
