@@ -227,12 +227,15 @@ img,
     font-weight: lighter;
     letter-spacing: 0.08em;
 }
-.row-2#span {
+.row-2 {
     color: #f7f7ff;
     margin-top: 5%;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.08em;    
+}
+.row-2#q-no {
+    font-size: 30px;
 }
 .row-3 {
     margin-top: 5%;
