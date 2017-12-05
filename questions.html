@@ -20,6 +20,14 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script>
       <link rel="stylesheet" href="assets/css/questions.css">
       <script src="assets/js/questions.js"></script>
+
+      <script type="text/javascript">
+
+        var data = <%= data %>;
+        var questions = <%= data.questions %>;
+        window.ques_counter = 0;
+
+      </script>
    </head>
    <body>
 
@@ -48,15 +56,22 @@
                      {{rem-time}} 
                   </div>
                </div>
+               <div class="row col-md-10 col-md-offset-1 row-1-5">
+                <img id="question_img">
+               </div>
                <div class="row col-md-10 col-md-offset-1 row-2">
-                  <span id="q-no"> </span> 
+                  <span id="q-no"> </span> /10
+                  <br>
+                  <span id="question_body"></span>
                </div>
                <div class="col-md-10 col-md-offset-1 row-3">
-                  <textarea class="form-control" rows="7" placeholder="Your answer here." required></textarea>
+                  <textarea class="form-control" rows="7" placeholder="Your answer here." id="answer" required></textarea>
                </div>
             </div>
             <div class="col-md-12 text-center">
-               <button id="submit-answer" type="submit" class="btn">Next<span class="glyphicon glyphicon-play"></span>
+               <button id="submit-answer" type="submit" class="btn" onclick = "postAnswer()">
+                  <span id="changeToSubmit">Next</span> 
+                  <span class="glyphicon glyphicon-play"></span>
                </button>
             </div>
          </div>

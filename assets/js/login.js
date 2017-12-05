@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log(document.cookie);
+  
     $("#login").click(function () {
 
                 
