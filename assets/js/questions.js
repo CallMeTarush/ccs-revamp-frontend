@@ -11,7 +11,7 @@ function init() {
 
 function nextQuestion() {
   incrementValue();
-  getElementById("answer").value = "";
+  document.getElementById("answer").value = "";
   if(getCounterValue() == (questions.length - 1) ) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
