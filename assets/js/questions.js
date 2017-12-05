@@ -1,9 +1,7 @@
 $(document).ready(function() {
   
   $.get("/questions/technical", function(data, status){
-      
-    $("#user.name").html(data.message);
-  
+      console.log(data);  
   });
 });
 

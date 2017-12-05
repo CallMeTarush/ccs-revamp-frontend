@@ -1,10 +1,5 @@
 $(document).ready(function() {
  
-  $.get("demo_test.asp", function(data, status){
-      
-    $("#user.name").html(data.message);
-  
-  });
   $("#logout").click(function () {
     
     window.location = "/login";
