@@ -37,7 +37,7 @@
             </div>
             <div class="col-md-12 row-2">
               <div class="col-md-8 col-md-offset-1">
-                Hello, {{Fullname}}. You can attempt one or more sections based on your capability.
+                Hello, <%= fullname %>. You can attempt one or more sections based on your capability.
               </div>
               <div class="col-md-2 text-center">
                 <button id="login" type="submit" class="btn"><i>logout</i></button>
@@ -46,37 +46,42 @@
             </div>
             <div class="col-md-12 row-3 col-sm-12">
               <div class="col-md-12 col-sm-12">
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Design 
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Develop
+                <a href="/startexam/design">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="choice">
+                      <div class="choice-img">
+                        <img src="filler.jpg">
+                      </div>
+                      <div class="choice-text text-center">
+                        Design 
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="choice">
-                    <div class="choice-img">
-                      <img src="filler.jpg">
-                    </div>
-                    <div class="choice-text text-center">
-                      Manage 
+                </a>
+                <a href="/startexam/technical">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="choice">
+                      <div class="choice-img">
+                        <img src="filler.jpg">
+                      </div>
+                      <div class="choice-text text-center">
+                        Develop
+                      </div>
                     </div>
                   </div>
-                </div>
-                
+                </a>
+                <a href="/startexam/management">
+                  <div class="col-md-4 col-sm-4">
+                    <div class="choice">
+                      <div class="choice-img">
+                        <img src="filler.jpg">
+                      </div>
+                      <div class="choice-text text-center">
+                        Manage 
+                      </div>
+                    </div>
+                  </div>
+                </a>
               </div>   
          </div>
       </div>      <!-- /.container -->
