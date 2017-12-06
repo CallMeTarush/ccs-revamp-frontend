@@ -14,7 +14,7 @@ $(document).ready(function () {
    }
   if(data.advtechnical) {
     document.getElementById("advtechnical").style.cursor = "not-allowed";
-    $("#advtech-img").attr("src","assets/images/advtech-bw.png");
+    document.getElementById("advtech-img").src="/assets/images/advtech-bw.png";
   }
 });
 function on() {

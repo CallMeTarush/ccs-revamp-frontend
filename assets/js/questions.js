@@ -70,7 +70,6 @@ function incrementValue()
 function getImage()
 {
   document.getElementById("question_img").src="ccs.csivit.com/images/" + questions[ques_counter].imagepath;  
-  
 }
 
 function getQuestionBody()
