@@ -116,34 +116,19 @@ function time_remaining(endtime){
   var hours = Math.floor( (t/(1000*60*60)) % 24 );
   var days = Math.floor( t/(1000*60*60*24) );
   return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
-
-  function update_clock() {
-      var t = time_remaining(endtime);
-      clock.innerHTML = t.minutes+' : '+t.seconds;
-      
-      if(t.total == 0){ 
-        postAnswer();
-        window.location = "/dashboard";
-      }
-      
-      if(t.minutes>=10 && t.seconds>0) {
-        alert("Bad Choice buddy");
-        postAnswer();
-        window.location = "/dashboard";
-      }
-
-      if(t.minutes < 0 && t.seconds>0) {
-        alert("Bad Choice buddy");
-        postAnswer();
-        window.location = "/dashboard";
-      }
-  }
 }
 function run_clock(id,endtime){
   var clock = document.getElementById(id);
+  function update_clock(){
+    var t = time_remaining(endtime);
+    clock.innerHTML = t.minutes+' : '+t.seconds;
+    if(t.total<=0){ clearInterval(timeinterval); }
+  }
   update_clock(); // run function once at first to avoid delay
   var timeinterval = setInterval(update_clock,1000);
 }
+run_clock('clockdiv',deadline);
+
 
 
 //Background
