@@ -239,6 +239,9 @@ body {
     padding-top: 5vh; 
     font-size: 20px;   
 }
+.container-over u {
+    color: #5ec4ff;
+}
 .container-over h1 {
     color: #ea525f;
     margin-bottom: 4vh;
