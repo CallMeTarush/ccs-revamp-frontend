@@ -104,7 +104,17 @@ function postAnswer() {
   });
 }
 // 10 minutes from now
-var time_in_minutes = 10;
+
+
+var time_in_minutes = 20;
+if(window.location == "https://ccs.csivit.com/startexam/management")
+{
+  time_in_minutes = 30;
+}
+else if(window.location == "https://ccs.csivit.com/startexam/design")
+{
+  time_in_minutes = 20;
+}
 var current_time = Date.parse(new Date());
 var deadline = new Date(current_time + time_in_minutes*60*1000);
 

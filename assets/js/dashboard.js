@@ -2,19 +2,19 @@ $(document).ready(function () {
   console.log(data);
   if(data.design) {
      document.getElementById("design").style.cursor = "not-allowed";
-     document.getElementById("design").style.opacity = "0.6";
-  }
+     $("#question_img").attr("src","assets/images/design-bw.png");
+    }
   if(data.technical) {
     document.getElementById("technical").style.cursor = "not-allowed";
-    document.getElementById("technical").style.opacity = "0.6";
+    $("#question_img").attr("src","assets/images/technicalbw.png");
   }
   if(data.management) {
     document.getElementById("management").style.cursor = "not-allowed";
-    document.getElementById("management").style.opacity = "0.6";
-  }
+    $("#question_img").attr("src","assets/images/managementbw.png"); 
+   }
   if(data.advtechnical) {
     document.getElementById("advtechnical").style.cursor = "not-allowed";
-    document.getElementById("advtechnical").style.opacity = "0.6";
+    $("#question_img").attr("src","assets/images/advtech-bw.png");
   }
 });
 function on() {
