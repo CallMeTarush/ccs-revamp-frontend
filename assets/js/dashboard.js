@@ -12,6 +12,10 @@ $(document).ready(function () {
     document.getElementById("management").style.cursor = "not-allowed";
     document.getElementById("management").style.opacity = "0.6";
   }
+  if(data.advtechnical) {
+    document.getElementById("advtechnical").style.cursor = "not-allowed";
+    document.getElementById("advtechnical").style.opacity = "0.6";
+  }
 });
 function on() {
     document.getElementById("overlay").style.display = "block";
@@ -39,6 +43,14 @@ function technicalClick() {
     window.location = "/startexam/technical";
   }
 };
+function advTechClick() {
+  if(data.advtechnical) {
+    alert("Already attempted");
+  }
+  else {
+    window.location = "/startexam/advtechnical";
+  }
+};
 function managementClick() {
   if(data.management) {
     alert("Already attempted");
@@ -57,7 +69,7 @@ function managementClick() {
 function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;
-  
+
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
   $('.bg').css({
