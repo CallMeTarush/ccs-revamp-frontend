@@ -18,17 +18,17 @@ $(document).ready(function () {
     document.getElementById('categoryName').innerHTML = "Advanced Technical";
   }
   init();
-  window.onblur = function () {
-    ++left_page;
-    if(left_page==1) {
-      alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
-    }
-    if(left_page==2) {
-      postAnswer();
-      window.location = "/dashboard";
+  // window.onblur = function () {
+  //   ++left_page;
+  //   if(left_page==1) {
+  //     alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
+  //   }
+  //   if(left_page==2) {
+  //     postAnswer();
+  //     window.location = "/dashboard";
 
-    }
-  }
+  //   }
+  // }
 });
 //Do it. (if you can)
 
