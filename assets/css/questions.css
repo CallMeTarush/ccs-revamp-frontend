@@ -24,7 +24,7 @@ body {
     color: white;
 }
 .row-1 {
-    margin-bottom: 4%;
+    margin-bottom: 1%;
 }
 .btn {
     background: transparent;
@@ -229,7 +229,7 @@ img,
 }
 .row-2 {
     color: #f7f7ff;
-    margin-top: 5%;
+    margin-top: 1%;
     font-size: 15px;
     font-weight: lighter;
     letter-spacing: 0.08em;    

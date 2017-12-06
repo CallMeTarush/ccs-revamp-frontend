@@ -231,3 +231,15 @@ body {
     z-index: 2;
     cursor: pointer;
 }
+.row-h2f {
+
+}
+.row-h2f a{
+    color: #B6C23A;
+    font-size: 18px;
+}
+.h2f-container {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 3%;
+}
