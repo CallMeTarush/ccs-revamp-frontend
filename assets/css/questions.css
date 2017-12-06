@@ -244,3 +244,7 @@ img,
     width: 80% !important;
     height: auto;
 }
+#question_img {
+    width: 60% !important;
+    height: auto;
+}

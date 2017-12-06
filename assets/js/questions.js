@@ -74,6 +74,8 @@ function getImage()
     document.getElementById("question_img").style.display= "none";
   }
   else {
+
+    document.getElementById("question_img").style.display= "block";
   document.getElementById("question_img").src= "/images/" + questions[ques_counter].imagePath;  
   }
 }
