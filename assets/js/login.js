@@ -27,7 +27,7 @@ $(document).ready(function () {
                           $("#message").html(data.message);
                         }
                         else {
-                          window.location = "/dashboard-timer";
+                          window.location = "/dashboard";
                         }
                      },
 
