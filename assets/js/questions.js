@@ -13,6 +13,10 @@ $(document).ready(function () {
   {
     document.getElementById('categoryName').innerHTML = "Technical";
   }
+  if(window.location == "https://ccs.csivit.com/startexam/advtechnical")
+  {
+    document.getElementById('categoryName').innerHTML = "Advanced Technical";
+  }
   init();
   window.onblur = function () {
     ++left_page;
@@ -62,6 +66,7 @@ function incrementValue()
 
 function getImage()
 {
+  console.log(questions[ques_counter].imagepath);
   if(questions[ques_counter].imagepath == undefined) {
      document.getElementById("question_img").style.display = "none";
   }
