@@ -69,8 +69,7 @@ function incrementValue()
 
 function getImage()
 {
-  
-  $("#question_img").attr("src","ccs.csivit.com/images/" + questions[ques_counter].imagepath);
+  document.getElementById("question_img").src="ccs.csivit.com/images/" + questions[ques_counter].imagepath;  
   
 }
 
