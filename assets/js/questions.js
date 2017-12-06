@@ -120,6 +120,10 @@ else if(window.location == "https://ccs.csivit.com/startexam/design")
 {
   time_in_minutes = 20;
 }
+else if(window.location == "https://ccs.csivit.com/startexam/advtechnical")
+{
+  time_in_minutes = 30;
+}
 var current_time = Date.parse(new Date());
 var deadline = new Date(current_time + time_in_minutes*60*1000);
 
