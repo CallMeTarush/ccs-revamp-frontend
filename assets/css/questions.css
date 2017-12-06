@@ -14,7 +14,9 @@ body {
     background-color: #12131e;
 }
 textarea {
-    font-size: 14px;
+    font-size: 16px !important;
+    font-weight: lighter;
+    letter-spacing: 0.06em !important;
 }
 @media screen and (min-width: 768px) {
     .br-mob {
