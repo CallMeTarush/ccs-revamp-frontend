@@ -1,5 +1,18 @@
 $(document).ready(function () {
   run_clock('clockdiv',deadline);
+  var currentLocation = window.location;
+  if(window.location == "https://ccs.csivit.com/startexam/management")
+  {
+    document.getElementById('categoryName').innerHTML = "Management";
+  }
+  if(window.location == "https://ccs.csivit.com/startexam/design")
+  {
+    document.getElementById('categoryName').innerHTML = "Design"; 
+  }
+  if(window.location == "https://ccs.csivit.com/startexam/technical")
+  {
+    document.getElementById('categoryName').innerHTML = "Technical"; 
+  }
   init();
   window.onblur = function () {
     ++left_page;
