@@ -27,27 +27,7 @@ $(document).ready(function () {
   }
 });
 //Do it. (if you can)
-function update_clock() {
-    var t = time_remaining(endtime);
-    clock.innerHTML = t.minutes+' : '+t.seconds;
-    
-    if(t.total == 0){ 
-      postAnswer();
-      window.location = "/dashboard";
-    }
-    
-    if(t.minutes>=10 && t.seconds>0) {
-      alert("Bad Choice buddy");
-      postAnswer();
-      window.location = "/dashboard";
-    }
 
-    if(t.minutes < 0 && t.seconds>0) {
-      alert("Bad Choice buddy");
-      postAnswer();
-      window.location = "/dashboard";
-    }
-  }
   
 
 function init() {
@@ -136,6 +116,28 @@ function time_remaining(endtime){
   var hours = Math.floor( (t/(1000*60*60)) % 24 );
   var days = Math.floor( t/(1000*60*60*24) );
   return {'total':t, 'days':days, 'hours':hours, 'minutes':minutes, 'seconds':seconds};
+
+  function update_clock() {
+      var t = time_remaining(endtime);
+      clock.innerHTML = t.minutes+' : '+t.seconds;
+      
+      if(t.total == 0){ 
+        postAnswer();
+        window.location = "/dashboard";
+      }
+      
+      if(t.minutes>=10 && t.seconds>0) {
+        alert("Bad Choice buddy");
+        postAnswer();
+        window.location = "/dashboard";
+      }
+
+      if(t.minutes < 0 && t.seconds>0) {
+        alert("Bad Choice buddy");
+        postAnswer();
+        window.location = "/dashboard";
+      }
+  }
 }
 function run_clock(id,endtime){
   var clock = document.getElementById(id);
