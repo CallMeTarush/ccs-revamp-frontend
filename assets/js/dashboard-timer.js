@@ -1,5 +1,5 @@
 $(document).ready(function() {
- 
+  window.location = "/dashboard";
   $("#logout").click(function () {
     
     window.location = "/logout";
