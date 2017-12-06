@@ -312,6 +312,9 @@ input:focus:invalid {
     font-size: 14px;
     margin-bottom: 8px;
 }
+.form-pass {
+    margin-top: 20vh;
+}
 fieldset legend {
     color: white;
 
@@ -356,7 +359,7 @@ fieldset legend {
     border-bottom-color: #ea525f;
    
 }
-.row-login-btn {
+.row-login {
     margin-top: 0;
     margin-bottom: 3%;
 }
@@ -408,13 +411,6 @@ input.form-control {
     font-family: 'myFont', Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
-.absolute-center {
-  margin: auto;
-  height: 50%;
-
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-}
 .h2f-container a{
     color: lightgreen;
     font-size: 18px;
@@ -440,4 +436,8 @@ input.form-control {
 }
 #re-pass {
     color: white;
+}
+#pass i {
+    line-height: 100%;
+    margin: auto;
 }
