@@ -66,7 +66,7 @@ function getImage()
      document.getElementById("question_img").style.display = "none";
   }
   else {
-    document.getElementById("question_img").src= "ccs.csivit.com/images/" + questions[ques_counter].imagepath;
+    $("#question_img").attr("src","ccs.csivit.com/images/" + questions[ques_counter].imagepath);
   }
 }
 
