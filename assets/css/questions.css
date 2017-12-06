@@ -241,10 +241,6 @@ img,
 
 }
 .row-1-5 img {
-    width: 80% !important;
-    height: auto;
-}
-#question_img {
-    width: 60% !important;
-    height: auto;
+    width: 500px;
+    height: 100%;
 }
