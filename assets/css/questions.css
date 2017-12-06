@@ -243,7 +243,8 @@ img,
     color: #5ec4ff;
 }
 .row-1-5 {
-    
+    width: 100%;
+    text-align: center;
 }
 .row-1-5 img {
     width: 500px;
