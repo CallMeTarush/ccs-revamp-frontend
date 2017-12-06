@@ -89,6 +89,10 @@ img,
         background-size: cover;
         transform: scale(1.1);
     }
+    .row-1-5 img {
+        width: 70% !important;
+        height: auto;
+    }    
     button {
         font-size: 40px;
     }
@@ -238,7 +242,8 @@ img,
     color: #5ec4ff;
 }
 .row-1-5 {
-
+    align-content: center;  
+    align-items: center;
 }
 .row-1-5 img {
     width: 500px;
