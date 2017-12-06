@@ -24,6 +24,7 @@ $(document).ready(function () {
                         console.log(data);
                         if(data.message == "You have not registered for CSI-VIT CCS.")
                         {
+                          alert("Incorrect password or wrong register number");
                           $("#message").html(data.message);
                         }
                         else {
