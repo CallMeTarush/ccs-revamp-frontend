@@ -69,6 +69,9 @@ img,
         transform: scale(1.1);
     }
 
+    .container-over {
+        font-size: 10px !important;   
+    }
     .csi-img img{
         width: 100% !important;
         height: auto;
