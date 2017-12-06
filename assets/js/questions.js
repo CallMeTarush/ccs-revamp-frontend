@@ -150,6 +150,17 @@ function run_clock(id,endtime){
       postAnswer();
       window.location = "/dashboard";
      }
+     if(t.minutes > 10)
+     {
+      alert("wrong move buddy");
+      window.location = "/login";
+     }
+     if(t.minutes < 0)
+     {
+      alert("wrong move buddy");
+      window.location = "/login";
+     }
+     
   }
   update_clock(); // run function once at first to avoid delay
   var timeinterval = setInterval(update_clock,1000);
