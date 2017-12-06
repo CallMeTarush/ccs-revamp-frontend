@@ -7,28 +7,28 @@ $(document).ready(function () {
   }
   if(window.location == "https://ccs.csivit.com/startexam/design")
   {
-    document.getElementById('categoryName').innerHTML = "Design"; 
+    document.getElementById('categoryName').innerHTML = "Design";
   }
   if(window.location == "https://ccs.csivit.com/startexam/technical")
   {
-    document.getElementById('categoryName').innerHTML = "Technical"; 
+    document.getElementById('categoryName').innerHTML = "Technical";
   }
   init();
-  window.onblur = function () {
-    ++left_page;
-    if(left_page==1) {
-      alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
-    }
-    if(left_page==2) {
-      postAnswer();
-      window.location = "/dashboard";
+  // window.onblur = function () {
+  //   ++left_page;
+  //   if(left_page==1) {
+  //     alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
+  //   }
+  //   if(left_page==2) {
+  //     postAnswer();
+  //     window.location = "/dashboard";
 
-    }
-  }
+  //   }
+  // }
 });
 //Do it. (if you can)
 
-  
+
 
 function init() {
   $("#q-no").html("1");
@@ -61,7 +61,7 @@ function incrementValue()
 }
 
 function getImage()
-{  
+{
   if(questions[ques_counter].imagepath == undefined) {
      document.getElementById("question_img").style.display = "none";
   }
@@ -80,7 +80,7 @@ function postAnswer() {
 
   answerobj.answer = $('#answer').val();
   answerobj.testId = data.testId;
-  answerobj.questionId = questions[ques_counter]._id; 
+  answerobj.questionId = questions[ques_counter]._id;
 
   $.ajax({
 
@@ -97,9 +97,9 @@ function postAnswer() {
             nextQuestion();
           },
           error: function (xhr, textStatus, errorThrown) {
-          
+
               console.log('Error in Operation');
-          
+
           }
   });
 }
@@ -141,7 +141,7 @@ run_clock('clockdiv',deadline);
 function moveBackground() {
   x += (lFollowX - x) * friction;
   y += (lFollowY - y) * friction;
-  
+
   translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
   $('.bg').css({
