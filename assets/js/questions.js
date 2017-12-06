@@ -42,6 +42,9 @@ function init() {
 
 function nextQuestion() {
   incrementValue();
+  if(getCounterValue == 11) {
+    window.location = "/dashboard";
+  }
   document.getElementById("answer").value = "";
 
   if(getCounterValue() == (questions.length - 1) ) {
@@ -66,13 +69,9 @@ function incrementValue()
 
 function getImage()
 {
-  console.log(questions[ques_counter].imagepath);
-  if(questions[ques_counter].imagepath == undefined) {
-     document.getElementById("question_img").style.display = "none";
-  }
-  else {
-    $("#question_img").attr("src","ccs.csivit.com/images/" + questions[ques_counter].imagepath);
-  }
+  
+  $("#question_img").attr("src","ccs.csivit.com/images/" + questions[ques_counter].imagepath);
+  
 }
 
 function getQuestionBody()
