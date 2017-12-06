@@ -428,6 +428,7 @@ input.form-control {
     color: white;
     margin-top: 2% ;
 }
+
 .wrap {
     height: 100%;
     position: relative;
@@ -439,5 +440,4 @@ input.form-control {
 }
 #re-pass {
     color: white;
-    
 }

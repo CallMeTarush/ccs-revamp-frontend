@@ -18,7 +18,7 @@ $(document).ready(function () {
                      data: user,
 
                      success: function (data, textStatus, xhr) {
-
+                        
                         $("#message").html(data.message);
                         
                      },
