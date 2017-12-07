@@ -1,7 +1,6 @@
 $(document).ready(function () {
   displayUsers();
-});
-$('#user').find('tr').click( function(){
+  $('#user').find('tr').click( function(){
 
     if(users[$(this).index()].isEvaluated) {
       alert("Evaluated!");
@@ -10,6 +9,8 @@ $('#user').find('tr').click( function(){
       window.location = "/evaluate/" + users[$(this).index()].regno;
     }
   });
+
+});
 
 function displayUsers()
 {
