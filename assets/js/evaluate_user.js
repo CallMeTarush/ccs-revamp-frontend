@@ -28,23 +28,6 @@ $(document).ready(function () {
   });
 });
 
-function displayUsers()
-{
-  
-  for (i = 0; i < users.length; i++) {
-    if(questions[ques_counter].imagePath == undefined) {
-      document.getElementById("question_img").style.display= "none";
-    
-    }
-    else {
-
-      document.getElementById("question_img").style.display= "block";
-      document.getElementById("question_img").src= "/images/" + questions[ques_counter].imagePath;  
-    }
-  }   
-
-}
-
 
 
 var lFollowX = 0,

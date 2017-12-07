@@ -13,7 +13,7 @@ function init() {
 function nextQuestion() {
   incrementValue();
   if(getCounterValue == 11) {
-    window.location = "/dashboard";
+    window.location = "/";
   }
   document.getElementById("answer").value = "";
 
