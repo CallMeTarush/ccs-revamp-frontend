@@ -1,40 +1,6 @@
 $(document).ready(function () {
   displayUsers();
 
-       while (parent = parent.parentNode) {
-           if (isRow(parent)) {
-              alert(parent.rowIndex + 1); 
-                if(users[parent.rowIndex].isEvaluated) {
-                  alert("Evaluated!");
-                }
-                else {
-
-                  if(window.location == "https://ccs.csivit.com/usertests/technical")
-                  { 
-
-                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/technical";
-                  }
-                  else if(window.location == "https://ccs.csivit.com/usertests/management")
-                  { 
-
-                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/management";
-                  }
-                  else if(window.location == "https://ccs.csivit.com/usertests/design")
-                  { 
-
-                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/design";
-                  }
-                  else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
-                  { 
-
-                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/advtechnical";
-                  }
-                }
-              return true;
-           }
-       }
-        return false;
-   };
     
 });
 
@@ -63,8 +29,7 @@ function displayUsers()
        document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/advtechnical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
  
                   }
-        document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/advtechnical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
-  } 
+          }
 
 }
 
