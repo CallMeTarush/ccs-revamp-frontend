@@ -22,7 +22,11 @@ $(document).ready(function () {
 
         window.location = "/evaluate/" + users[$(this).index()].regno + "/design";
       }
-      
+      else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
+      { 
+
+        window.location = "/evaluate/" + users[$(this).index()].regno + "/advtechnical";
+      }
     }
   });
 });
