@@ -22,7 +22,7 @@
       <script type="text/javascript">
 
         data = <%-JSON.stringify(data)%>;
-        window.regno = <%= regno %>;
+        window.regno = "<%= regno %>";
         console.log(regno);
         console.log("work?");
         questions = data.questions;
