@@ -1,5 +1,9 @@
 $(document).ready(function () {
   displayUsers();
+  $('#thetable').find('tr').click( function(){
+  alert('You clicked row '+ ($(this).index()+1) );
+  });
+
 })
 
 function displayUsers()
@@ -10,6 +14,8 @@ function displayUsers()
   }   
 
 }
+
+
 
 var lFollowX = 0,
     lFollowY = 0,
