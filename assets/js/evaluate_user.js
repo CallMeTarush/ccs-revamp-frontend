@@ -9,7 +9,7 @@ $(document).ready(function () {
       window.location = "/evaluate/" + users[$(this).index()].regno;
     }
   });
-
+  $('user').tablesort()
 });
 
 function displayUsers()
