@@ -1,13 +1,17 @@
   
 var check = function() {
-  if (document.getElementById('password').value ==
-    document.getElementById('confirm_password').value) {
+  var n = document.getElementById('password').value.length;
+
+  if (document.getElementById('password').value == document.getElementById('confirm_password').value ) {
     document.getElementById('message').style.color = 'green';
     document.getElementById('message').innerHTML = 'matching';
   } 
   else {
     document.getElementById('message').style.color = 'red';
     document.getElementById('message').innerHTML = 'not matching';
+  }
+  if(n < 8) {
+    document.getElementById('message').innerHTML = 'Password must be of 8 characters';
   }
 } 
 
