@@ -1,6 +1,5 @@
 $(document).ready(function () {
   displayUsers();
-  $('#user').tablesort();
 
   $('#user').find('tr').click( function(){
 
