@@ -25,7 +25,7 @@ function displayUsers() {
                   }
                   else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
                   { 
-       document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/advtechnical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
+       document.getElementById("user").innerHTML += "<tr><td><a href='/evaluate/'" + users[i].regno + "/advtechnical>" + users[i].regno + "</a></td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></tr>"; 
  
                   }
           }
