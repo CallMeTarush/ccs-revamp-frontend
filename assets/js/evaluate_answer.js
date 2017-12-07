@@ -27,6 +27,7 @@ function nextQuestion() {
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
+  document.getElementById("answer").innerHTML = questions[ques_counter].answer;
 }
 
 function getCounterValue() {
