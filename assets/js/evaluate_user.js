@@ -1,7 +1,7 @@
 $(document).ready(function () {
   displayUsers();
-  $('user').tablesort()
-  
+  $('#user').tablesort()
+
   $('#user').find('tr').click( function(){
 
     if(users[$(this).index()].isEvaluated) {
