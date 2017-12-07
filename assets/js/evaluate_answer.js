@@ -15,30 +15,30 @@ function nextQuestion() {
   incrementValue();
   
   if(getCounterValue == 11) {
-      if(window.location == "https://ccs.csivit.com/evaluate/" + <%= regno %> + "/management")
+      if(window.location == "https://ccs.csivit.com/evaluate/" + regno + "/management")
       {
-        $.get("/markevaluated/" + <%= regno %> + "/management", function(data, status){
+        $.get("/markevaluated/" +  regno + "/management", function(data, status){
           alert("done");
           window.location = "/usertests/management";
         });
       }
-      if(window.location == "https://ccs.csivit.com/evaluate/" + <%= regno %> + "/design")
+      if(window.location == "https://ccs.csivit.com/evaluate/" +  regno + "/design")
       {
-        $.get("/markevaluated/" + <%= regno %> + "/design", function(data, status){
+        $.get("/markevaluated/" +  regno  + "/design", function(data, status){
           alert("done");
           window.location = "/usertests/design";
         });
       }
-      if(window.location == "https://ccs.csivit.com/evaluate/" + <%= regno %> + "/technical")
+      if(window.location == "https://ccs.csivit.com/evaluate/" +  regno  + "/technical")
       {
-        $.get("/markevaluated/" + <%= regno %> + "/technical", function(data, status){
+        $.get("/markevaluated/" +  regno  + "/technical", function(data, status){
           alert("done");
           window.location = "/usertests/technical";
         });
       }
-      if(window.location == "https://ccs.csivit.com/evaluate/" + <%= regno %> + "/advtechnical")
+      if(window.location == "https://ccs.csivit.com/evaluate/" +  regno + "/advtechnical")
       {
-        $.get("/markevaluated/" + <%= regno %> + "/advtechnical", function(data, status){
+        $.get("/markevaluated/" + regno  + "/advtechnical", function(data, status){
           alert("done");
           window.location = "/usertests/advtechnical";
         });
