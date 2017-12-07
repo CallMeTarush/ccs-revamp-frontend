@@ -11,14 +11,40 @@ function init() {
 }
 
 function nextQuestion() {
+
   incrementValue();
 
 
   if(getCounterValue == 11) {
-      $.get("/evaluate/" + users[$(this).index()].regno + "/technical", function(data, status){
-      alert("done");
-      window.location = "/";
-    });
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/management")
+      {
+        $.get("/markevaluated/" + data.regno + "/management", function(data, status){
+          alert("done");
+          window.location = "/";
+        });
+      }
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/design")
+      {
+        $.get("/markevaluated/" + data.regno + "/design", function(data, status){
+          alert("done");
+          window.location = "/";
+        });
+      }
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/technical")
+      {
+        $.get("/markevaluated/" + data.regno + "/technical", function(data, status){
+          alert("done");
+          window.location = "/";
+        });
+      }
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/advtechnical")
+      {
+        $.get("/markevaluated/" + data.regno + "/advtechnical", function(data, status){
+          alert("done");
+          window.location = "/";
+        });
+      }
+
   }
 
   if(getCounterValue() == (questions.length - 1) ) {
