@@ -14,9 +14,8 @@ function nextQuestion() {
 
   incrementValue();
   
-
   if(getCounterValue == 11) {
-      if(window.location == "https://ccs.csivit.com/evaluate/" + data.user.regno + "/management")
+      if(window.location == "https://ccs.csivit.com/evaluate/" + <%= regno %> + "/management")
       {
         $.get("/markevaluated/" + data.regno + "/management", function(data, status){
           alert("done");
