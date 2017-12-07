@@ -69,7 +69,7 @@ function incrementValue()
 
 function getImage()
 {
-  console.log(questions);
+  
   if(questions[ques_counter].imagePath == undefined) {
     document.getElementById("question_img").style.display= "none";
   }

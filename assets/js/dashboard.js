@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  console.log(data);
+  
   if(data.design) {
      document.getElementById("design").style.cursor = "not-allowed";
      document.getElementById("design-img").src= "/assets/images/design-bw.png";
