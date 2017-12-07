@@ -1,41 +1,16 @@
-$(document).ready(function () {
   
-  
-    $('#form').bootstrapValidator({
-        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
-        feedbackIcons: {
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            password: {
-                validators: {
-                     stringLength: {
-                        min: 8,
-                        message: 'Password must be at least 8 characters long'
-                    },
-                    notEmpty: {
-                        message: 'Please supply your password'
-                    }
-                }
-            },
-            confpassword: {
-                validators: {
-                    identical: {
-                        field: 'password',
-                        message: 'The passwords do not match.'
-                        },
-                    notEmpty: {
-                        message: 'This field can not be empty.'
-                    }
-                  }
-                }
-            }
-        })
-        .on('success.form.bv', function(e) {
-          
-        });
+var check = function() {
+  if (document.getElementById('password').value ==
+    document.getElementById('confirm_password').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'matching';
+  } 
+  else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'not matching';
+  }
+} 
 
-});
 
  var lFollowX = 0,
     lFollowY = 0,
