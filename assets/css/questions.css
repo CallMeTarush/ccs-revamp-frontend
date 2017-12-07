@@ -3,6 +3,9 @@
 *:after {
     box-sizing: border-box;
 }
+span #answer {
+    color: white;
+}
 html,
 body {
     height: 100%;
