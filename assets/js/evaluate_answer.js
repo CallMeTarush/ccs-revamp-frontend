@@ -7,7 +7,7 @@ function init() {
   $("#q-no").html("1");
   getImage();
   getQuestionBody();
-  document.getElementById("answer-check").innerHTML = questions[ques_counter].answer;
+  document.getElementById("answercheck").innerHTML = questions[ques_counter].answer;
 }
 
 function nextQuestion() {
@@ -55,7 +55,7 @@ function nextQuestion() {
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
-  document.getElementById("answer-check").innerHTML = questions[ques_counter].answer;
+  document.getElementById("answercheck").innerHTML = questions[ques_counter].answer;
 }
 
 function getCounterValue() {
