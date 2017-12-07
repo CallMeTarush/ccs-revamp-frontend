@@ -1,7 +1,5 @@
 $(document).ready(function () {
   displayUsers();
-  
-
 });
 $('#user').find('tr').click( function(){
 
@@ -11,9 +9,7 @@ $('#user').find('tr').click( function(){
     else {
       window.location = "/evaluate/" + users[$(this).index()].regno;
     }
-  }
-
-});
+  });
 
 function displayUsers()
 {
