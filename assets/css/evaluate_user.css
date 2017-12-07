@@ -13,6 +13,15 @@ body {
     position: relative;
 }
 
+#user tr {
+    background-color: #F0F0F0;
+    color: #000000;
+}
+
+#user tr:hover {
+    background-color: #E0E0E0;
+}
+
 .form-control {
     background: transparent;
     border: 0;
