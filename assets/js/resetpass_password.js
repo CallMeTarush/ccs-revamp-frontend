@@ -24,7 +24,6 @@ $(document).ready(function () {
                         field: 'password',
                         message: 'The passwords do not match.'
                         },
-                    
                     notEmpty: {
                         message: 'This field can not be empty.'
                     }
@@ -33,9 +32,7 @@ $(document).ready(function () {
             }
         })
         .on('success.form.bv', function(e) {
-            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
-                $('#form').data('bootstrapValidator').resetForm();
-                
+          
         });
 
 });
