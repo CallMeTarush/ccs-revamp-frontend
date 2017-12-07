@@ -12,17 +12,19 @@ function init() {
 
 function nextQuestion() {
   incrementValue();
+
+
   if(getCounterValue == 11) {
-    window.location = "/";
+      $.get("/evaluate/" + users[$(this).index()].regno + "/technical", function(data, status){
+      alert("done");
+      window.location = "/";
+    });
   }
 
   if(getCounterValue() == (questions.length - 1) ) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
 
-  if(getCounterValue() == questions.length) {
-    window.location = "/dashboard";
-  }
 
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
