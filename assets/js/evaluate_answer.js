@@ -15,14 +15,15 @@ function nextQuestion() {
   if(getCounterValue == 11) {
     window.location = "/";
   }
-  document.getElementById("answer").value = "";
 
   if(getCounterValue() == (questions.length - 1) ) {
     document.getElementById("changeToSubmit").innerHTML = "Submit";
   }
+
   if(getCounterValue() == questions.length) {
     window.location = "/dashboard";
   }
+
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
