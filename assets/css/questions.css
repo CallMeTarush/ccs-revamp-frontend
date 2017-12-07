@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 span #answer {
-    color: white;
+    font-size: 20px;
 }
 html,
 body {
