@@ -14,7 +14,7 @@ function nextQuestion() {
 
   incrementValue();
   
-  if(getCounterValue() == 11) {
+  if(getCounterValue() == 10) {
       if(window.location == "https://ccs.csivit.com/evaluate/" + regno + "/management")
       {
         $.get("/markevaluated/" +  regno + "/management", function(data, status){
