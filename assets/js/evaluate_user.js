@@ -32,7 +32,15 @@ function displayUsers()
 {
   
   for (i = 0; i < users.length; i++) {
-    document.getElementById("user").innerHTML += "<tr><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></tr>";  
+    if(questions[ques_counter].imagePath == undefined) {
+      document.getElementById("question_img").style.display= "none";
+    
+    }
+    else {
+
+      document.getElementById("question_img").style.display= "block";
+      document.getElementById("question_img").src= "/images/" + questions[ques_counter].imagePath;  
+    }
   }   
 
 }

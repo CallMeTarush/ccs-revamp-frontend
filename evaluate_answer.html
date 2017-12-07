@@ -1,40 +1,44 @@
+
+
 <!DOCTYPE html>
 <html>
    <head>
       <title> Computer Society of India - CCS </title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="assets/cdns/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
      <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
 
 
-      <script src="/assets/cdns/sorttable.js"></script>
       <!-- jQuery library -->
       <script src="/assets/cdns/jquery.min.js"></script>
       <!-- Latest compiled JavaScript -->
       <script src="/assets/cdns/bootstrap.min.js"></script>
 
-      <link rel="stylesheet" href="/assets/css/evaluate_user.css">
-      <script src="/assets/js/evaluate_user.js"></script>
+      <link rel="stylesheet" href="/assets/css/questions.css">
+      <script src="/assets/js/questions.js"></script>
+
       <script type="text/javascript">
-        
+
         data = <%-JSON.stringify(data)%>;
-        users = data.users;
-        
+        questions = data.questions;
+        window.ques_counter = 0;
+        window.left_page = 0;
+
       </script>
-      
    </head>
    <body>
 
-      <div class="container col-md-12 col-xs-12">
+
+      <div class="container col-md-12 col-xs-12" id="myDiv">
 
           <div class="bg"></div>
           <div class="upar-walla">
           <!-- <div id="bg-parallel" data-parallaxify-background-range="100"></div> -->
             <div class="col-md-12 text-center row-logo">
                <div class="col-md-4 col-md-offset-4">
-                  <img src="assets/images/csi_typeface.png" class="csi-img">
+                  <img src="/assets/images/csi_typeface.png" class="csi-img">
                </div>
             </div>
              <div class="row col-md-12 text-center">
@@ -42,12 +46,27 @@
                   <h1><b>CORE COMMITTEE <br class="br-mob">SELECTIONS</b></h1>
                </div>
             </div>
-            <div class="row-login col-md-12 text-center">
-              Evaluate
+            <div class="col-md-10 col-md-offset-1">
+               
+               <div class="row row-1-5 text-center">
+                <img id="question_img">
+               </div>
+               <div class="row col-md-10 col-md-offset-1 row-2">
+                  <span id="q-no"> </span> /10
+                  <br>
+                  <span id="question_body"></span>
+               </div>
+               <div class="col-md-10 col-md-offset-1 row-3">
+                  <span id="answer"></span>
+               </div>
             </div>
-
-          </div>
-
+            <div class="col-md-12 text-center">
+               <button id="submit-answer" type="submit" class="btn" onclick="postAnswer()">
+                  <span id="changeToSubmit">Next</span>
+                  <span class="glyphicon glyphicon-play"></span>
+               </button>
+            </div>
+         </div>
       </div>      <!-- /.container -->
    </body>
 </html>
