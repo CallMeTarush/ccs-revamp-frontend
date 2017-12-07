@@ -5,7 +5,13 @@ $(document).ready(function () {
 });
 $('#user').find('tr').click( function(){
 
-  window.location = "/evaluate/" + users[$(this).index()].regno;
+    if(users[$(this).index()].isEvaluated) {
+      alert("Evaluated!");
+    }
+    else {
+      window.location = "/evaluate/" + users[$(this).index()].regno;
+    }
+  }
 
 });
 
@@ -13,7 +19,9 @@ function displayUsers()
 {
   
   for (i = 0; i < users.length; i++) {
-    document.getElementById("user").innerHTML += "<tr><td>" + users[i].regno + "<td>" + users[i].name + "<td>" + users[i].phone + "</td></tr>";  
+
+    document.getElementById("user").innerHTML += "<tr><td>" + users[i].regno + "<td>" + users[i].name + "<td>" + users[i].phone + "<td>" + users[i].isEvaluated +"</td></tr>";  
+  
   }   
 
 }
