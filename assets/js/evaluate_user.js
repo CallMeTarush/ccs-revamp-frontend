@@ -6,7 +6,22 @@ $(document).ready(function () {
       alert("Evaluated!");
     }
     else {
-      window.location = "/evaluate/" + users[$(this).index()].regno;
+      if(window.location == "https://ccs.csivit.com/usertests/technical")
+      { 
+
+        window.location = "/evaluate/" + users[$(this).index()].regno + "/technical";
+      }
+      else if(window.location == "https://ccs.csivit.com/usertests/management")
+      { 
+
+        window.location = "/evaluate/" + users[$(this).index()].regno + "/management";
+      }
+      else if(window.location == "https://ccs.csivit.com/usertests/design")
+      { 
+
+        window.location = "/evaluate/" + users[$(this).index()].regno + "/design";
+      }
+      
     }
   });
   $('user').tablesort()
