@@ -7,13 +7,13 @@ function init() {
   $("#q-no").html("1");
   getImage();
   getQuestionBody();
-  document.getElementById("answer").innerHTML = questions[ques_counter].answer;
+  document.getElementById("answer-check").innerHTML = questions[ques_counter].answer;
 }
 
 function nextQuestion() {
 
   incrementValue();
-
+  
 
   if(getCounterValue == 11) {
       if(window.location == "https://ccs.csivit.com/evaluate/" + data.user.regno + "/management")
@@ -55,7 +55,7 @@ function nextQuestion() {
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
-  document.getElementById("answer").innerHTML = questions[ques_counter].answer;
+  document.getElementById("answer-check").innerHTML = questions[ques_counter].answer;
 }
 
 function getCounterValue() {

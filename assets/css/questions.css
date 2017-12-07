@@ -3,8 +3,8 @@
 *:after {
     box-sizing: border-box;
 }
-span #answer {
-    font-size: 20px;
+#answer-check {
+    color: white;
 }
 html,
 body {
