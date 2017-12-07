@@ -16,6 +16,9 @@ body {
     position: relative;
     background-color: #12131e;
 }
+#rgno {
+    color:white;
+}
 textarea {
     font-size: 16px !important;
     font-weight: lighter;
