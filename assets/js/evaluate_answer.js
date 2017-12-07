@@ -16,14 +16,14 @@ function nextQuestion() {
 
 
   if(getCounterValue == 11) {
-      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/management")
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.user.regno + "/management")
       {
         $.get("/markevaluated/" + data.regno + "/management", function(data, status){
           alert("done");
           window.location = "/";
         });
       }
-      if(window.location == "https://ccs.csivit.com/evaluate/" + data.regno + "/design")
+      if(window.location == "https://ccs.csivit.com/evaluate/" + data.user.regno + "/design")
       {
         $.get("/markevaluated/" + data.regno + "/design", function(data, status){
           alert("done");
