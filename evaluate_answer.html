@@ -22,7 +22,8 @@
       <script type="text/javascript">
 
         data = <%-JSON.stringify(data)%>;
-        window.regno = <%= regno %>
+        window.regno = <%= regno %>;
+        console.log(regno);
         questions = data.questions;
         window.ques_counter = 0;
         window.left_page = 0;
