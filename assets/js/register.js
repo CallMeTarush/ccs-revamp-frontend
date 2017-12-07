@@ -30,8 +30,10 @@ $(document).ready(function () {
 
                         $('form input').val("");
                         $('#message').html(data.message);
+                        
                         if(data.message=="Successfully Registered") {
-                          $('#message').html("Successfully Registered! <a href='/login'> Login! </a>");
+                          $('#message').html("Successfully Registered!");
+                          window.location = "/login";
                         }
 
                      },
