@@ -1,41 +1,69 @@
 $(document).ready(function () {
   displayUsers();
 
-  $('#user').find('tr').click( function(){
+       while (parent = parent.parentNode) {
+           if (isRow(parent)) {
+              alert(parent.rowIndex + 1); 
+                if(users[parent.rowIndex].isEvaluated) {
+                  alert("Evaluated!");
+                }
+                else {
 
-    if(users[$(this).index()].isEvaluated) {
-      alert("Evaluated!");
-    }
-    else {
-      if(window.location == "https://ccs.csivit.com/usertests/technical")
-      { 
+                  if(window.location == "https://ccs.csivit.com/usertests/technical")
+                  { 
 
-        window.location = "/evaluate/" + users[$(this).index()].regno + "/technical";
-      }
-      else if(window.location == "https://ccs.csivit.com/usertests/management")
-      { 
+                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/technical";
+                  }
+                  else if(window.location == "https://ccs.csivit.com/usertests/management")
+                  { 
 
-        window.location = "/evaluate/" + users[$(this).index()].regno + "/management";
-      }
-      else if(window.location == "https://ccs.csivit.com/usertests/design")
-      { 
+                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/management";
+                  }
+                  else if(window.location == "https://ccs.csivit.com/usertests/design")
+                  { 
 
-        window.location = "/evaluate/" + users[$(this).index()].regno + "/design";
-      }
-      else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
-      { 
+                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/design";
+                  }
+                  else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
+                  { 
 
-        window.location = "/evaluate/" + users[$(this).index()].regno + "/advtechnical";
-      }
-    }
-  });
+                    window.location = "/evaluate/" + users[parent.rowIndex].regno + "/advtechnical";
+                  }
+                }
+              return true;
+           }
+       }
+        return false;
+   };
+    
 });
 
 function displayUsers()
 {
   
   for (i = 0; i < users.length; i++) {
-    document.getElementById("user").innerHTML += "<tr><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></tr>"; 
+                  if(window.location == "https://ccs.csivit.com/usertests/technical")
+                  { 
+                           document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/technical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
+ 
+                 }
+                  else if(window.location == "https://ccs.csivit.com/usertests/management")
+                  { 
+                           document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/management><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
+ 
+                  }
+                  else if(window.location == "https://ccs.csivit.com/usertests/design")
+                  { 
+
+       document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/design><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
+ 
+                  }
+                  else if(window.location == "https://ccs.csivit.com/usertests/advtechnical")
+                  { 
+       document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/advtechnical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
+ 
+                  }
+        document.getElementById("user").innerHTML += "<tr><a href='/evaluate/'" + users[i].regno + "/advtechnical><td>" + users[i].regno + "</td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated +"</td></a></tr>"; 
   } 
 
 }
