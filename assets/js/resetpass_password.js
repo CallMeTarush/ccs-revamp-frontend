@@ -1,10 +1,3 @@
-  
-var check = function() {
-  var n = document.getElementById('password').value.length;
-}
-
-} 
-
 
  var lFollowX = 0,
     lFollowY = 0,
