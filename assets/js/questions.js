@@ -19,6 +19,19 @@ $(document).ready(function () {
   }
   init();
   window.onblur = function () {
+    
+  }
+});
+//Do it. (if you can)
+
+setInterval( checkFocus, 200 );
+
+function checkFocus() {
+
+  if ( document.hasFocus() ) {
+      ;
+  } 
+  else {
     ++left_page;
     if(left_page==1) {
       alert("You have left the page once! This is your first warning. Don't change the page again");
@@ -31,9 +44,7 @@ $(document).ready(function () {
       window.location = "/dashboard";
     }
   }
-});
-//Do it. (if you can)
-
+}
 
 
 function init() {
