@@ -1,4 +1,7 @@
+var left_page = 0;
+  
 $(document).ready(function () {
+
   run_clock('clockdiv',deadline);
   var currentLocation = window.location;
   if(window.location == "https://ccs.csivit.com/startexam/management")
