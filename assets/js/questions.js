@@ -1,4 +1,3 @@
-var left_page = 0;
   
 $(document).ready(function () {
   
