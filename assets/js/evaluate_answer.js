@@ -58,7 +58,13 @@ function nextQuestion() {
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
-  document.getElementById("answercheck").innerHTML = questions[ques_counter].answer;
+  if(ques_counter == 11)
+  {
+      document.getElementById("answercheck").innerHTML = "I wish i got paid for this";      
+  }
+  else {
+    document.getElementById("answercheck").innerHTML = questions[ques_counter].answer;
+  }
 }
 
 function getCounterValue() {
@@ -90,5 +96,10 @@ function getImage()
 
 function getQuestionBody()
 {
-  document.getElementById("question_body").innerHTML = questions[ques_counter].body;
+  if(ques_counter == 11) {
+    document.getElementById("question_body").innerHTML = "Wait na";
+  }
+  else {
+    document.getElementById("question_body").innerHTML = questions[ques_counter].body;
+  }
 }
