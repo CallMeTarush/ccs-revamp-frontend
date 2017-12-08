@@ -8,7 +8,7 @@ function displayUsers() {
 
     for (i = 0; i < users.length; i++) {
         
-        else {
+
           if (window.location == "https://ccs.csivit.com/usertests/technical") {
                 document.getElementById("user").innerHTML += "<tr><td>" + (i+1) + "</td><td><a href='/evaluate/" + users[i].regno + "/technical'>" + users[i].regno + "</a></td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated + "</td></tr>";
 
@@ -24,7 +24,7 @@ function displayUsers() {
               document.getElementById("user").innerHTML += "<tr><td>" + (i+1) + "</td><td><a href='/evaluate/" + users[i].regno + "/advtechnical'>" + users[i].regno + "</a></td><td>" + users[i].name + "</td><td>" + users[i].phone + "</td><td>" + users[i].isEvaluated + "</td></tr>";
 
           }
-        }
+
     }
 
 }
