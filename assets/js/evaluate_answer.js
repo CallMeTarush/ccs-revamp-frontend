@@ -67,7 +67,7 @@ function getCounterValue() {
 
 function incrementValue()
 {
-  if(ques_counter==10) {
+  if(ques_counter==11) {
     ;
   }
   else {
