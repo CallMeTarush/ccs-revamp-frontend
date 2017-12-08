@@ -14,7 +14,7 @@ function nextQuestion() {
 
   incrementValue();
   
-  if(getCounterValue() == 11) {
+  if(getCounterValue() == 10) {
       document.getElementById("question_body").innerHTML = "Wait na";
       document.getElementById("answercheck").innerHTML = "I wish i got paid for this";      
 
@@ -59,7 +59,7 @@ function nextQuestion() {
   $("#q-no").html(getCounterValue() + 1);
   getQuestionBody();
   getImage();
-  if(ques_counter == 11)
+  if(ques_counter == 10)
   {
       document.getElementById("answercheck").innerHTML = "I wish i got paid for this";      
   }
@@ -74,7 +74,7 @@ function getCounterValue() {
 
 function incrementValue()
 {
-  if(ques_counter==11) {
+  if(ques_counter==10) {
     ;
   }
   else {
@@ -97,7 +97,7 @@ function getImage()
 
 function getQuestionBody()
 {
-  if(ques_counter == 11) {
+  if(ques_counter == 10) {
     document.getElementById("question_body").innerHTML = "Wait na";
   }
   else {
