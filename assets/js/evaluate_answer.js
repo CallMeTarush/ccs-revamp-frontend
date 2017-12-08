@@ -14,9 +14,13 @@ function nextQuestion() {
 
   incrementValue();
   
-  if(getCounterValue() == 10) {
+  if(getCounterValue() == 11) {
+
+      alert("Wait for an amount of time inversely propotional to your internet speed :>");
+      
       if(window.location == "https://ccs.csivit.com/evaluate/" + regno + "/management")
       {
+
         $.get("/markevaluated/" +  regno + "/management", function(data, status){
           alert("done");
           window.location = "/usertests/management";
@@ -63,7 +67,12 @@ function getCounterValue() {
 
 function incrementValue()
 {
-  ++ques_counter;
+  if(ques_counter==10) {
+    ;
+  }
+  else {
+    ++ques_counter;
+  } 
 }
 
 function getImage()
