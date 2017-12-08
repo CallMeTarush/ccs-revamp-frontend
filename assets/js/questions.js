@@ -18,9 +18,7 @@ $(document).ready(function () {
     document.getElementById('categoryName').innerHTML = "Advanced Technical";
   }
   init();
-  window.onblur = function () {
-    
-  }
+
 });
 //Do it. (if you can)
 
