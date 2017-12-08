@@ -15,8 +15,9 @@ function nextQuestion() {
   incrementValue();
   
   if(getCounterValue() == 11) {
+      document.getElementById("question_body").innerHTML = "Wait na";
+      document.getElementById("answercheck").innerHTML = "I wish i got paid for this";      
 
-      alert("Wait for an amount of time inversely propotional to your internet speed :>");
       
       if(window.location == "https://ccs.csivit.com/evaluate/" + regno + "/management")
       {
