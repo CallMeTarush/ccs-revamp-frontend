@@ -1,8 +1,7 @@
 var left_page = 0;
   
 $(document).ready(function () {
-  checkFocus();
-  myFunction();
+  
   run_clock('clockdiv',deadline);
   var currentLocation = window.location;
   if(window.location == "https://ccs.csivit.com/startexam/management")
@@ -23,35 +22,25 @@ $(document).ready(function () {
   }
   init();
 
-});
-//Do it. (if you can)
-function myFunction() {
-    setInterval( checkFocus, 200 );
-}
-
-
-function checkFocus() {
-
-  if ( document.hasFocus() ) {
-      ;
-  } 
-  else {
-    ++left_page;
-
-    if(left_page==1) {
+     window.onblur = function () {
+     ++left_page;
+     if(left_page==1) {
+      alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
       alert("You have left the page once! This is your first warning. Don't change the page again");
-    }
-
-    if(left_page==2) {
+     }
+     if(left_page==2) {
       alert("You have left the page twice! This is your last warning. Don't change the page again"); 
     }
-
     if(left_page==3) {
-      postAnswer();
-      window.location = "/dashboard";
-    }
-  }
-}
+       postAnswer();
+       window.location = "/dashboard";
+
+     }
+   }
+
+});
+//Do it. (if you can)
+
 
 
 function init() {
