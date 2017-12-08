@@ -21,12 +21,14 @@ $(document).ready(function () {
   window.onblur = function () {
     ++left_page;
     if(left_page==1) {
-      alert("You have left the page once! If you do this again Your test will be submitted and considered as attempted.");
+      alert("You have left the page once! This is your first warning. Don't change the page again");
     }
     if(left_page==2) {
+      alert("You have left the page twice! This is your last warning. Don't change the page again"); 
+    }
+    if(left_page==3) {
       postAnswer();
       window.location = "/dashboard";
-
     }
   }
 });
