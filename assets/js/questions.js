@@ -27,9 +27,6 @@ $(document).ready(function () {
      if(left_page==1) {
       alert("You have left the page once! This is your first warning. Don't change the page again");
      }
-     if(left_page==2) {
-
-    }
     if(left_page==3) {
        postAnswer();
        window.location = "/dashboard";
