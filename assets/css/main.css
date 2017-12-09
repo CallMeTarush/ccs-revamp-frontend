@@ -3,6 +3,10 @@
 *:after {
     box-sizing: border-box;
 }
+.timer {
+    font-size: 85px !important;
+    color: #ea525f;
+}
 html,
 body {
     height: 100%;
@@ -99,7 +103,7 @@ img,
 }
 .row-2 {
     color: white;
-    margin: 20vh 0;
+    margin: 10vh 0;
 }
 
 #matter { 
